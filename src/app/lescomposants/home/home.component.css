@@ -1,0 +1,29 @@
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.carousel-content h6 {
+    font-size: 1.5rem;
+}
+
+.carousel-content h1 {
+    font-size: 3.5rem;
+}
+
+.carousel-content-btn1,
+.carousel-content-btn2 {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.carousel-content-btn1:focus,
+.carousel-content-btn2:focus {
+    outline: none;
+}

@@ -1,0 +1,29 @@
+{
+  "formulaire": [
+    {
+      "id": "123432",
+      "nometprenom ": "taissir bouzidi",
+      "email": "taysirbouzidi123@gmail.com",
+      "phone": 9523514521,
+      "password": "hjdhfs123"
+    },
+    {
+      "id": "123432",
+      "nometprenom": "jhondolé",
+      "email": "exemple@gmail.com",
+      "phone": 123488999
+    },
+    {
+      "id": "dMpLuOo",
+      "nometprenom": "khouloud bouzidi",
+      "email": "khouloud@gmail.com",
+      "phone": "15261719"
+    },
+    {
+      "id": "126727",
+      "nometprenom": "aziz",
+      "email": "exemple@gmail.com",
+      "phone": 123488999
+    }
+  ]
+}
