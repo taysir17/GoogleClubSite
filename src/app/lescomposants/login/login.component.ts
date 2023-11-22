@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CondidatService } from 'src/app/lesservices/condidat.service';
+import{Form} from'src/app/lesclasses/form';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,16 +11,27 @@ import { CondidatService } from 'src/app/lesservices/condidat.service';
 })
 export class LoginComponent implements OnInit {
   condidat!: FormGroup;
+  tableauForms: Form[] = [];
 
-  constructor(private formBuilder: FormBuilder, private condidatService: CondidatService) { }
+  constructor(private formBuilder: FormBuilder, private router: Router, private condidatService: CondidatService) { }
 
   ngOnInit(): void {
     this.condidat = this.formBuilder.group({
-      id: [0],
-      email: ['exemple@gmail.com'],
-      password: ['123@hjfdhs']
+      email: ['exemple@gmail.com', [Validators.required, Validators.email]],
+      password: ['123@hjfdhs', Validators.required]
     });
   }
 
+  log() {
+    this.router.navigate(['/home']);
+  }
  
-}
+  
+       
+  
+     
+  }
+  
+  
+    
+  

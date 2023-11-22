@@ -21,8 +21,6 @@ import { CongratulationsComponent } from './lescomposants/congratulations/congra
 import { LoginComponent } from './lescomposants/login/login.component';
 import { DepdevComponent } from './lescomposants/depdev/depdev.component';
 import { DepmediaComponent } from './lescomposants/depmedia/depmedia.component';
-import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/ajoutformation.component';
-import { ModifierComponent } from './lescomposants/admin/modifier/modifier.component';
 
 @NgModule({
   declarations: [
@@ -40,9 +38,7 @@ import { ModifierComponent } from './lescomposants/admin/modifier/modifier.compo
     CongratulationsComponent,
     LoginComponent,
     DepdevComponent,
-    DepmediaComponent,
-    AjoutformationComponent,
-    ModifierComponent  ],
+    DepmediaComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

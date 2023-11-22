@@ -10,9 +10,10 @@ const URL="http://localhost:3000/formulaire"
 export class CondidatService {
 
   constructor(private http:HttpClient){}
-  getProduits():Observable<Form[]>{
-    return this.http.get<Form[]>(URL);
-    }
+  
+    getcondidat():Observable<Form>{
+      return this.http.get<Form>(URL);
+      }
     
   addcondidat(p:Form):Observable<Form>{
     return this.http.post<Form>(URL, p);
