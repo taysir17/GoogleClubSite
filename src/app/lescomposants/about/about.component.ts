@@ -9,7 +9,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
     trigger('fadeIn', [
       transition(':enter', [
         style({ opacity: 0 }),
-        animate('1000ms', style({ opacity: 1 })),
+        animate('3000ms', style({ opacity: 1 })),
       ]),
     ]),
   ],

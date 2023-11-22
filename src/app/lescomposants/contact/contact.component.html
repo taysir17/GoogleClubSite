@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div class="container-fluid py-5 mb-5">
     <div class="container">
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
@@ -11,10 +12,14 @@
                         <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
                             <i class="fas fa-map-marker-alt text-white"></i>
                         </div>
-                        <div class="ms-3">
-                            <h4 class="text-primary">Address</h4>
-                            <a href="https://www.google.com/maps/place/ISET+CharguiA/@36.8513073,10.2088414,17z/data=!3m1!4b1!4m6!3m5!1s0x12fd3532056d986d:0x36f5072f8a82c006!8m2!3d36.851303!4d10.211411!16s%2Fg%2F11b8szbd7m?entry=ttu" target="_blank" class="h5 text-dark">47, Rue des Entrepreneurs Charguia II - 2035 Tunisie</a>
-                        </div>
+                        <!-- contact.component.html -->
+<div class="ms-3">
+    <h4 class="text-primary">Address</h4>
+    <div id="map" style="height: 400px;"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <a href="#" class="h5 text-dark">47, Rue des Entrepreneurs Charguia II - 2035 Tunisie</a>
+  </div>
+  
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">

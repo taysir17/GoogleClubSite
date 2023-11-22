@@ -11,9 +11,21 @@ import { FormulaireComponent } from './lescomposants/formulaire/formulaire.compo
 import { CongratulationsComponent } from './lescomposants/congratulations/congratulations.component';
 import { LoginComponent } from './lescomposants/login/login.component';
 import { DepmediaComponent } from './lescomposants/depmedia/depmedia.component';
+import { InterfaceComponent } from './lescomposants/interface/interface.component';
+import { DescriptionComponent } from './lescomposants/description/description.component';
 
 const routes: Routes = [
-  {path:"home",title:'home',component:HomeComponent},
+  {path:"interface",title:"interface",component:InterfaceComponent,children:[
+    {path:"login",title:"login",component:LoginComponent},
+    {path:"formulaire",title:"Signup",component:FormulaireComponent},
+  ]},
+  
+
+  
+
+  {path:"home",title:'home',component:HomeComponent,children:[
+    {path:"description",title:"dis",component:DescriptionComponent},
+  ]},
   {path:"about",title:'about',component:AboutComponent},
   {path:"contact",title:'contact',component:ContactComponent},
   {path:"departement",title:'departement',component:ServiceComponent,children:[
@@ -22,10 +34,9 @@ const routes: Routes = [
   ]},
   {path:"team",title:'team',component:TeamComponent},
   {path:"project",title:'project',component:ProjectsComponent},
-  {path:"formulaire",title:"Signup",component:FormulaireComponent},
   {path:"congratulation",title:"congratulation",component:CongratulationsComponent},
-  {path:"login",title:"login",component:LoginComponent},
-  {path:"",redirectTo:'home',pathMatch:'full'},
+  
+  {path:"",redirectTo:'interface',pathMatch:'full'},
   {path:"**",title:'erreur',component:ErreurComponent}
 ];
 

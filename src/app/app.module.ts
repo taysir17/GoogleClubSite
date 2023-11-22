@@ -21,6 +21,8 @@ import { CongratulationsComponent } from './lescomposants/congratulations/congra
 import { LoginComponent } from './lescomposants/login/login.component';
 import { DepdevComponent } from './lescomposants/depdev/depdev.component';
 import { DepmediaComponent } from './lescomposants/depmedia/depmedia.component';
+import { InterfaceComponent } from './lescomposants/interface/interface.component';
+import { DescriptionComponent } from './lescomposants/description/description.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { DepmediaComponent } from './lescomposants/depmedia/depmedia.component';
     CongratulationsComponent,
     LoginComponent,
     DepdevComponent,
-    DepmediaComponent  ],
+    DepmediaComponent,
+    InterfaceComponent,
+    DescriptionComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

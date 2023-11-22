@@ -8,22 +8,17 @@
       "password": "hjdhfs123"
     },
     {
-      "id": "123432",
-      "nometprenom": "jhondolé",
-      "email": "exemple@gmail.com",
-      "phone": 123488999
+      "id": "123",
+      "nometprenom": "mohamed amine ben massaoud",
+      "email": "medamine@gmail.com",
+      "phone": "55212711"
     },
     {
-      "id": "dMpLuOo",
-      "nometprenom": "khouloud bouzidi",
-      "email": "khouloud@gmail.com",
-      "phone": "15261719"
-    },
-    {
-      "id": "126727",
-      "nometprenom": "aziz",
+      "id": "jkfdjnqkfd",
+      "nometprenom": "dfs",
       "email": "exemple@gmail.com",
-      "phone": 123488999
+      "phone": 123488999,
+      "password": "jdhqsdqj@12"
     }
   ]
 }

@@ -20,6 +20,7 @@ export class FormulaireComponent implements OnInit {
       nometprenom: ['jhondolé'],
       email: ['exemple@gmail.com'],
       phone: [123488999],
+      password:["jdhqsdqj@12"],
     
       
     });
