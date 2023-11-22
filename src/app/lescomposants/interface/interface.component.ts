@@ -13,6 +13,6 @@ export class InterfaceComponent {
     this.router.navigate(['/interface/formulaire']);
   }
   login(){
-    this.router.navigate(['interface/login']);
+    this.router.navigate(['/interface/login']);
   }
 }

@@ -21,13 +21,14 @@ import { CongratulationsComponent } from './lescomposants/congratulations/congra
 import { LoginComponent } from './lescomposants/login/login.component';
 import { DepdevComponent } from './lescomposants/depdev/depdev.component';
 import { DepmediaComponent } from './lescomposants/depmedia/depmedia.component';
+import { InterfaceComponent } from './lescomposants/interface/interface.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    
+    InterfaceComponent,
     AboutComponent,
     ServiceComponent,
     TeamComponent,
