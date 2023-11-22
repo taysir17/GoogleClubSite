@@ -1,0 +1,13 @@
+{
+  "formation": [
+    {
+      "titre": "sada",
+      "image": "kadk",
+      "nbheure": 50,
+      "certifie": true,
+      "datedebut": "2023-11-19",
+      "condidat": [],
+      "id": 1
+    }
+  ]
+}

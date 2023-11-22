@@ -13,7 +13,7 @@ import { ServiceComponent } from './lescomposants/service/service.component';
 import { TeamComponent } from './lescomposants/team/team.component';
 import { ContactComponent } from './lescomposants/contact/contact.component';
 import { ErreurComponent } from './lescomposants/erreur/erreur.component';
-import { ProjectsComponent } from './lescomposants/projects/projects.component';
+import { ProjectsComponent } from './lescomposants/admin/projects/projects.component';
 import { FormulaireComponent } from './lescomposants/formulaire/formulaire.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -21,6 +21,8 @@ import { CongratulationsComponent } from './lescomposants/congratulations/congra
 import { LoginComponent } from './lescomposants/login/login.component';
 import { DepdevComponent } from './lescomposants/depdev/depdev.component';
 import { DepmediaComponent } from './lescomposants/depmedia/depmedia.component';
+import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/ajoutformation.component';
+import { ModifierComponent } from './lescomposants/admin/modifier/modifier.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { DepmediaComponent } from './lescomposants/depmedia/depmedia.component';
     CongratulationsComponent,
     LoginComponent,
     DepdevComponent,
-    DepmediaComponent  ],
+    DepmediaComponent,
+    AjoutformationComponent,
+    ModifierComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
