@@ -11,6 +11,7 @@ export class CondidatService {
   private authentificated=0;
   constructor(private http: HttpClient) { }
 
+
   getcondidat(): Observable<Form> {
     return this.http.get<Form>(URL);
   }

@@ -20,6 +20,7 @@ import { adminGuard } from './admin.guard';
 import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/ajoutformation.component';
 import { ModifierComponent } from './lescomposants/admin/modifier/modifier.component';
 
+
 const routes: Routes = [
 
   {path:"interface",title:"interface",component:InterfaceComponent,children:[
@@ -28,8 +29,6 @@ const routes: Routes = [
   ]},
   {path:"admin",title:'admin',component:DashboardadminComponent,canActivate:[adminGuard],children:[
     {path:"project",title:'project',component:ProjectsComponent},
-    {path:"ajouter",title:'ajouter',component:AjoutformationComponent},
-    {path:"modifier",title:'modifier',component:ModifierComponent},
     {path:"",redirectTo:'project',pathMatch:'full'},
   ]},
   {path:"public",title:'public',component:DashboardpublicComponent,canActivate:[publicGuard],children:[

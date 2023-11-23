@@ -22,12 +22,16 @@ import { LoginComponent } from './lescomposants/login/login.component';
 import { DepdevComponent } from './lescomposants/public/depdev/depdev.component';
 import { DepmediaComponent } from './lescomposants/public/depmedia/depmedia.component';
 import { InterfaceComponent } from './lescomposants/interface/interface.component';
+import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/ajoutformation.component';
+import { ModifierComponent } from './lescomposants/admin/modifier/modifier.component';
 import { DashboardpublicComponent } from './lescomposants/public/dashboardpublic/dashboardpublic.component';
 import { DashboardadminComponent } from './lescomposants/admin/dashboardadmin/dashboardadmin.component';
 import { HeaderadminComponent } from './lescomposants/admin/headeradmin/headeradmin.component';
 
 @NgModule({
   declarations: [
+    AjoutformationComponent,
+    ModifierComponent,
     AppComponent,
     HomeComponent,
     HeaderComponent,

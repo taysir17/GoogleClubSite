@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CondidatService } from 'src/app/lesservices/condidat.service';
-import{Form} from'src/app/lesclasses/form';
+import { Form } from 'src/app/lesclasses/form';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,7 +13,11 @@ export class LoginComponent implements OnInit {
   condidat!: FormGroup;
   tableauForms: Form[] = [];
 
-  constructor(private formBuilder: FormBuilder, private router: Router, private condidatService: CondidatService) { }
+  constructor(
+    private formBuilder: FormBuilder,
+    private router: Router,
+    private condidatService: CondidatService
+  ) {}
 
   ngOnInit(): void {
     this.condidat = this.formBuilder.group({
@@ -49,5 +53,7 @@ export class LoginComponent implements OnInit {
   }
   
   
-    
-  
+
+
+ 
+
