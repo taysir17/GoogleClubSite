@@ -16,8 +16,10 @@
                 <div class="project-img">
                     <img [src]="t.image" class="img-fluid w-100 rounded" alt="">
                     <div class="project-content">
-                        
-                            <h4 class="text-secondary">{{t.titre}}</h4>
+                            <div>
+                                <h4 class="text-warning">{{t.titre}}</h4>
+                            </div>
+                            
                             <p class="m-0 text-white">nombre d'heure: {{t.nbheure}}</p>
                             <div class="text-center">
                                 <button type="button" class="btn btn-primary" (click)="modifier(t)">Modifier</button>

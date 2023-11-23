@@ -9,6 +9,6 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   constructor(private router:Router) { }
 affiche(){
-  this.router.navigate(['home/description'])
+  this.router.navigate(['/public/home/description'])
 }
 }
