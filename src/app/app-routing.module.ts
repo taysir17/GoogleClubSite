@@ -19,15 +19,18 @@ import { publicGuard } from './public.guard';
 import { adminGuard } from './admin.guard';
 import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/ajoutformation.component';
 import { ModifierComponent } from './lescomposants/admin/modifier/modifier.component';
+import { ModifiermdpComponent } from './lescomposants/modifiermdp/modifiermdp.component';
+import { interfaceGuard } from './interface.guard';
 
 
 const routes: Routes = [
 
-  {path:"interface",title:"interface",component:InterfaceComponent,children:[
+  {path:"interface",title:"interface",component:InterfaceComponent,canActivate:[interfaceGuard],children:[
     {path:"login",title:"login",component:LoginComponent},
     {path:"formulaire",title:"Signup",component:FormulaireComponent},
   ]},
   {path:"admin",title:'admin',component:DashboardadminComponent,canActivate:[adminGuard],children:[
+    {path:"modifiermdp",title:'modifiermdp',component:ModifiermdpComponent},
     {path:"project",title:'project',component:ProjectsComponent},
     {path:"modifier",title:'modifier',component:ModifierComponent},
     {path:"ajouter",title:'ajouter',component:AjoutformationComponent},
@@ -37,6 +40,7 @@ const routes: Routes = [
     {path:"home",title:'home',component:HomeComponent,children:[
       {path:"description",title:"dis",component:DescriptionComponent},
     ]},
+    {path:"modifiermdp",title:'modifiermdp',component:ModifiermdpComponent},
     {path:"about",title:'about',component:AboutComponent},
     {path:"contact",title:'contact',component:ContactComponent},
     {path:"departement",title:'departement',component:ServiceComponent,children:[

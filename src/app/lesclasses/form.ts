@@ -1,9 +1,10 @@
 export class Form {
     constructor(
-        public nometprenom:String,
-        public email:String,
+        public id:string, 
+        public nometprenom:string,
+        public email:string,
         public phone:number,
-        public password:String,
+        public password:string,
         public role:string,
     ){}
 }

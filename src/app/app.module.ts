@@ -27,6 +27,7 @@ import { ModifierComponent } from './lescomposants/admin/modifier/modifier.compo
 import { DashboardpublicComponent } from './lescomposants/public/dashboardpublic/dashboardpublic.component';
 import { DashboardadminComponent } from './lescomposants/admin/dashboardadmin/dashboardadmin.component';
 import { HeaderadminComponent } from './lescomposants/admin/headeradmin/headeradmin.component';
+import { ModifiermdpComponent } from './lescomposants/modifiermdp/modifiermdp.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { HeaderadminComponent } from './lescomposants/admin/headeradmin/headerad
     DepmediaComponent,
     DashboardpublicComponent,
     DashboardadminComponent,
-    HeaderadminComponent  ],
+    HeaderadminComponent,
+    ModifiermdpComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

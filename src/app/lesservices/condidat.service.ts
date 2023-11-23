@@ -8,10 +8,20 @@ const URL = "http://localhost:3000/formulaire"
   providedIn: 'root'
 })
 export class CondidatService {
+  private user!:Form;
   private authentificated=0;
   constructor(private http: HttpClient) { }
 
+  getuser(){
+    return this.user;
+  }
+  setuser(u:Form){
+      this.user=u;
 
+  }
+  patchcondidat(id:string, data:any):Observable<Form>{
+    return this.http.patch<Form>(URL+"/"+ id, data);
+    }
   getcondidat(): Observable<Form> {
     return this.http.get<Form>(URL);
   }

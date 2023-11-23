@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier</title>
+    
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="contact-detail position-relative">
+        <h1>Modifier formation</h1>
+        <div class="contact-form">
+            <form action="" [formGroup]="changer" (ngSubmit)="onSubmitForm() ">
+            <div>
+                <label for="titre">email</label>
+                <input type="text" id="titre"  formControlName="email" readonly>
+            </div>
+            <div>
+                <label for="image">ancien mot de passe</label>
+                <input type="password" id="image"  formControlName="mdp">
+            </div>
+            <div>
+                <label for="nbheure">nouveau mot de passe </label>
+                <input type="password" id="nbheure" formControlName="nmdp" >
+            </div>
+            
+            <div>
+                <button >modifier</button>
+            </div>
+        </form>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
