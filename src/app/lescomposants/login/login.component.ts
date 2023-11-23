@@ -21,9 +21,25 @@ export class LoginComponent implements OnInit {
       password: ['123@hjfdhs', Validators.required]
     });
   }
+  
 
   log() {
-    this.router.navigate(['/home']);
+   
+   this.condidatService.cherchercandidat(this.condidat.value["email"],this.condidat.value["password"]).subscribe(data=>{
+    
+      if(this.condidatService.login(data)==1){
+          this.router.navigate(["/public"])
+      }
+      else if(this.condidatService.login(data)==2){
+        this.router.navigate(["/admin"])
+      }
+      else{
+        alert("aa")
+      }
+
+      
+   })
+   
   }
  
   

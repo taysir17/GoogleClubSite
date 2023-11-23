@@ -2,21 +2,39 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Form } from '../lesclasses/form';
 import { Observable } from 'rxjs';
-const URL="http://localhost:3000/formulaire"
+const URL = "http://localhost:3000/formulaire"
 
 @Injectable({
   providedIn: 'root'
 })
 export class CondidatService {
+  private authentificated=0;
+  constructor(private http: HttpClient) { }
 
-  constructor(private http:HttpClient){}
-  
-    getcondidat():Observable<Form>{
-      return this.http.get<Form>(URL);
-      }
-    
-  addcondidat(p:Form):Observable<Form>{
+  getcondidat(): Observable<Form> {
+    return this.http.get<Form>(URL);
+  }
+
+  addcondidat(p: Form): Observable<Form> {
     return this.http.post<Form>(URL, p);
+  }
+  login(data:Form[]) {
+    if(data.length!=0){
+      if(data[0].role=="public")
+      this.authentificated=1;
+    else
+    this.authentificated=2
     }
+   
+      return this.authentificated
     
+  }
+  public isAuthenticated() {
+    return this.authentificated;
+  }
+  cherchercandidat(email:string,pwd:string):Observable<Form[]>{
+
+    return this.http.get<Form[]>(URL+"?email="+email+"&password="+pwd);
+  }
+
 }

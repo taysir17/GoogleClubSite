@@ -4,14 +4,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './lescomposants/home/home.component';
-import { HeaderComponent } from './lescomposants/header/header.component';
+import { HomeComponent } from './lescomposants/public/home/home.component';
+import { HeaderComponent } from './lescomposants/public/header/header.component';
 import {HttpClientModule} from "@angular/common/http";
 
-import { AboutComponent } from './lescomposants/about/about.component';
-import { ServiceComponent } from './lescomposants/service/service.component';
-import { TeamComponent } from './lescomposants/team/team.component';
-import { ContactComponent } from './lescomposants/contact/contact.component';
+import { AboutComponent } from './lescomposants/public/about/about.component';
+import { ServiceComponent } from './lescomposants/public/service/service.component';
+import { TeamComponent } from './lescomposants/public/team/team.component';
+import { ContactComponent } from './lescomposants/public/contact/contact.component';
 import { ErreurComponent } from './lescomposants/erreur/erreur.component';
 import { ProjectsComponent } from './lescomposants/admin/projects/projects.component';
 import { FormulaireComponent } from './lescomposants/formulaire/formulaire.component';
@@ -19,9 +19,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CongratulationsComponent } from './lescomposants/congratulations/congratulations.component';
 import { LoginComponent } from './lescomposants/login/login.component';
-import { DepdevComponent } from './lescomposants/depdev/depdev.component';
-import { DepmediaComponent } from './lescomposants/depmedia/depmedia.component';
+import { DepdevComponent } from './lescomposants/public/depdev/depdev.component';
+import { DepmediaComponent } from './lescomposants/public/depmedia/depmedia.component';
 import { InterfaceComponent } from './lescomposants/interface/interface.component';
+import { DashboardpublicComponent } from './lescomposants/public/dashboardpublic/dashboardpublic.component';
+import { DashboardadminComponent } from './lescomposants/admin/dashboardadmin/dashboardadmin.component';
+import { HeaderadminComponent } from './lescomposants/admin/headeradmin/headeradmin.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { InterfaceComponent } from './lescomposants/interface/interface.componen
     CongratulationsComponent,
     LoginComponent,
     DepdevComponent,
-    DepmediaComponent  ],
+    DepmediaComponent,
+    DashboardpublicComponent,
+    DashboardadminComponent,
+    HeaderadminComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

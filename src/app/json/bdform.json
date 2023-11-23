@@ -1,24 +1,20 @@
 {
   "formulaire": [
     {
-      "id": "123432",
-      "nometprenom ": "taissir bouzidi",
-      "email": "taysirbouzidi123@gmail.com",
-      "phone": 9523514521,
-      "password": "hjdhfs123"
-    },
-    {
-      "id": "123",
-      "nometprenom": "mohamed amine ben massaoud",
-      "email": "medamine@gmail.com",
-      "phone": "55212711"
-    },
-    {
-      "id": "jkfdjnqkfd",
-      "nometprenom": "dfs",
+      "nometprenom": "jhondolé",
       "email": "exemple@gmail.com",
       "phone": 123488999,
-      "password": "jdhqsdqj@12"
+      "password": "jdhqsdqj@12",
+      "role": "admin",
+      "id": "4WiW_nv"
+    },
+    {
+      "nometprenom": "aziz",
+      "email": "aziz@gmail.com",
+      "phone": 123488999,
+      "password": "pwd",
+      "role": "public",
+      "id": "1LWCh-Z"
     }
   ]
 }

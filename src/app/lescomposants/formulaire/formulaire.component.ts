@@ -16,11 +16,11 @@ export class FormulaireComponent implements OnInit {
 
   ngOnInit(): void {
     this.personne = this.formBuilder.group({
-      id:[0],
       nometprenom: ['jhondolé'],
       email: ['exemple@gmail.com'],
       phone: [123488999],
       password:["jdhqsdqj@12"],
+      role:["public"]
     
       
     });
