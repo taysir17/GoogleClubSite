@@ -1,33 +1,33 @@
-<h1 class="text-primary text-justify" > Our Formation</h1>
+<h1 class="text-primary text-justify"> Our Formation</h1>
 <div class="container-fluid project py-5 mb-5">
     <div class="container">
         <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-           
-            
+
+
         </div>
-        <div class="row g-5" >
-            
+        <div class="row g-5">
+
             <div class="col-md-6 col-lg-6 wow fadeIn" *ngFor="let t of lesformation">
-                <div  >
-                    <div  >
-                        <div  >
-                          
-                                <h4 >{{t.titre}}</h4>
-                                <p >{{t.nbheure}}</p>
-                                
-                                <button (click)="modifier(t)">modifier</button>
-                                <button (click)="effacer(t.id)">Effacer</button>
-                               
-                            
+                <div>
+                    <div>
+                        <div>
+
+                            <h4>{{t.titre}}</h4>
+                            <p>{{t.nbheure}}</p>
+
+                            <button (click)="modifier(t)">modifier</button>
+                            <button (click)="effacer(t.id)">Effacer</button>
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-       
+
 
     </div>
-   
-</div>
-<button type="button" class="btn btn-success btn-lg rounded-pill carousel-content-btn1 animated fadeInLeft" (click)="ajouter()">Ajouter formation</button>
 
+</div>
+<button type="button" class="btn btn-success btn-lg rounded-pill carousel-content-btn1 animated fadeInLeft"
+    (click)="ajouter()">Ajouter formation</button>

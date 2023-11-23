@@ -17,6 +17,8 @@ import { DashboardpublicComponent } from './lescomposants/public/dashboardpublic
 import { DashboardadminComponent } from './lescomposants/admin/dashboardadmin/dashboardadmin.component';
 import { publicGuard } from './public.guard';
 import { adminGuard } from './admin.guard';
+import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/ajoutformation.component';
+import { ModifierComponent } from './lescomposants/admin/modifier/modifier.component';
 
 const routes: Routes = [
 
@@ -26,6 +28,8 @@ const routes: Routes = [
   ]},
   {path:"admin",title:'admin',component:DashboardadminComponent,canActivate:[adminGuard],children:[
     {path:"project",title:'project',component:ProjectsComponent},
+    {path:"ajouter",title:'ajouter',component:AjoutformationComponent},
+    {path:"modifier",title:'modifier',component:ModifierComponent},
     {path:"",redirectTo:'project',pathMatch:'full'},
   ]},
   {path:"public",title:'public',component:DashboardpublicComponent,canActivate:[publicGuard],children:[
