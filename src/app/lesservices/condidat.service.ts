@@ -14,6 +14,9 @@ export class CondidatService {
     getcondidat():Observable<Form>{
       return this.http.get<Form>(URL);
       }
+    login(email:String):Observable<Form[]>{
+      return this.http.get<Form[]>(URL+"?email="+email)
+    }
     
   addcondidat(p:Form):Observable<Form>{
     return this.http.post<Form>(URL, p);

@@ -22,9 +22,13 @@ import { LoginComponent } from './lescomposants/login/login.component';
 import { DepdevComponent } from './lescomposants/depdev/depdev.component';
 import { DepmediaComponent } from './lescomposants/depmedia/depmedia.component';
 import { InterfaceComponent } from './lescomposants/interface/interface.component';
+import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/ajoutformation.component';
+import { ModifierComponent } from './lescomposants/admin/modifier/modifier.component';
 
 @NgModule({
   declarations: [
+    AjoutformationComponent,
+    ModifierComponent,
     AppComponent,
     HomeComponent,
     HeaderComponent,

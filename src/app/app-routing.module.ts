@@ -13,6 +13,7 @@ import { LoginComponent } from './lescomposants/login/login.component';
 import { DepmediaComponent } from './lescomposants/depmedia/depmedia.component';
 import { InterfaceComponent } from './lescomposants/interface/interface.component';
 import { DescriptionComponent } from './lescomposants/description/description.component';
+import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/ajoutformation.component';
 
 const routes: Routes = [
   {path:"home",title:'home',component:HomeComponent,children:[
@@ -29,7 +30,9 @@ const routes: Routes = [
 
   ]},
   {path:"team",title:'team',component:TeamComponent},
-  {path:"project",title:'project',component:ProjectsComponent},
+  {path:"project",title:'project',component:ProjectsComponent,},
+  {path:"ajouter",title:'ajouter',component:AjoutformationComponent,},
+
   {path:"congratulation",title:"congratulation",component:CongratulationsComponent},
   {path:"login",title:"login",component:LoginComponent},
   {path:"",redirectTo:'home',pathMatch:'full'},
