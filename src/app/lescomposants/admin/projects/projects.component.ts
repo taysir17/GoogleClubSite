@@ -19,11 +19,11 @@ export class ProjectsComponent implements OnInit{
     throw new Error('Method not implemented.');
   }
   ajouter(){
-    this.router.navigate(['/ajouter']);
+    this.router.navigate(['/admin/ajouter']);
   }
   modifier(f:Formation){
     this.formationService.setf(f)
-    this.router.navigate(['/modifier']);
+    this.router.navigate(['/admin/modifier']);
   }
   effacer(id:string){
     this.formationService.deleteformation(id).subscribe((data: any) => window.location.reload());
