@@ -29,6 +29,8 @@ const routes: Routes = [
   ]},
   {path:"admin",title:'admin',component:DashboardadminComponent,canActivate:[adminGuard],children:[
     {path:"project",title:'project',component:ProjectsComponent},
+    {path:"modifier",title:'modifier',component:ModifierComponent},
+    {path:"ajouter",title:'ajouter',component:AjoutformationComponent},
     {path:"",redirectTo:'project',pathMatch:'full'},
   ]},
   {path:"public",title:'public',component:DashboardpublicComponent,canActivate:[publicGuard],children:[

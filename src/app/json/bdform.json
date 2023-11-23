@@ -16,5 +16,16 @@
       "role": "public",
       "id": "1LWCh-Z"
     }
+  ],
+  "formation": [
+    {
+      "titre": "developement",
+      "image": "https://www.theforage.com/blog/wp-content/uploads/2022/12/what-is-cybersecurity.jpg",
+      "nbheure": 23,
+      "certifie": false,
+      "datedebut": "2222-02-12",
+      "condidat": [],
+      "id": 4
+    }
   ]
 }
