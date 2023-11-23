@@ -26,21 +26,16 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  afficher() {
-    
-    this.condidatService.login(this.condidat.value["email"]).subscribe(
-      data => {
-      if (data[0].password==this.condidat.value["password"]){
-        this.router.navigate(['/home'])
-      }
-      else{
-        console.log("wrong mdp")
-      }
-        
-      },
-     
-    );
+  log() {
+    this.router.navigate(['/home']);
   }
-
  
-}
+  
+       
+  
+     
+  }
+  
+  
+    
+  
