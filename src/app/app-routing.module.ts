@@ -12,7 +12,7 @@ import { CongratulationsComponent } from './lescomposants/congratulations/congra
 import { LoginComponent } from './lescomposants/login/login.component';
 import { DepmediaComponent } from './lescomposants/public/depmedia/depmedia.component';
 import { InterfaceComponent } from './lescomposants/interface/interface.component';
-import { DescriptionComponent } from './lescomposants/description/description.component';
+
 import { DashboardpublicComponent } from './lescomposants/public/dashboardpublic/dashboardpublic.component';
 import { DashboardadminComponent } from './lescomposants/admin/dashboardadmin/dashboardadmin.component';
 import { publicGuard } from './public.guard';
@@ -34,9 +34,7 @@ const routes: Routes = [
     {path:"",redirectTo:'project',pathMatch:'full'},
   ]},
   {path:"public",title:'public',component:DashboardpublicComponent,canActivate:[publicGuard],children:[
-    {path:"home",title:'home',component:HomeComponent,children:[
-      {path:"description",title:"dis",component:DescriptionComponent},
-    ]},
+    {path:"home",title:'home',component:HomeComponent},
     {path:"about",title:'about',component:AboutComponent},
     {path:"contact",title:'contact',component:ContactComponent},
     {path:"departement",title:'departement',component:ServiceComponent,children:[

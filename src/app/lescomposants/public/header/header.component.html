@@ -31,13 +31,13 @@
             
             <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                 <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                    <a  routerLink="/public/home" class="nav-item nav-link "  routerLinkActive="red">Home</a>
-                    <a  routerLink="/public/about" class="nav-item nav-link" routerLinkActive="green">About</a>
-                    <a  routerLink="/public/departement" class="nav-item nav-link" routerLinkActive="yellow">Department</a>
+                    <a  routerLink="/public/home" class="nav-item nav-link "  >Home</a>
+                    <a  routerLink="/public/about" class="nav-item nav-link" >About</a>
+                    <a  routerLink="/public/departement" class="nav-item nav-link" >Department</a>
                     
-                    <a routerLink="/public/project" class="nav-item nav-link" routerLinkActive="red">Formation</a>
-                    <a  routerLink="/public/team" class="nav-item nav-link" routerLinkActive="yellow">Our Team</a>
-                    <a  routerLink="/public/contact" class="nav-item nav-link" routerLinkActive="green">Contact</a>
+                    <a routerLink="/public/project" class="nav-item nav-link" >Formation</a>
+                    <a  routerLink="/public/team" class="nav-item nav-link" >Our Team</a>
+                    <a  routerLink="/public/contact" class="nav-item nav-link" >Contact</a>
                 </div>
                 <div >
                     <i class="fa-solid fa-bell" ></i>
@@ -49,6 +49,17 @@
             </div>
         </nav>
         </div></div>
+        <div class="descripiton" *ngIf=divVisible>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Nom de l'utilisateur</h5>
+                <a >Changer le mot de passe</a><br>
+                <a routerLink="/interface">Déconnexion </a>
+                
+              </div>
+        
+            </div>
+        </div>
 
   
 </body>

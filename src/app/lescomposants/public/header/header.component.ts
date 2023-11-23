@@ -8,7 +8,11 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   constructor(private router:Router) { }
-affiche(){
-  this.router.navigate(['/public/home/description'])
+  divVisible: boolean = false;
+
+  affiche() {
+    this.divVisible = !this.divVisible;
+    console.log(this.divVisible)
+  }
 }
-}
+
