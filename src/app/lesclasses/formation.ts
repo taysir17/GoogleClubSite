@@ -1,7 +1,6 @@
 import { Form } from "./form";
 
 export class Formation {
-
     constructor(
        public id:string, 
        public titre:string,

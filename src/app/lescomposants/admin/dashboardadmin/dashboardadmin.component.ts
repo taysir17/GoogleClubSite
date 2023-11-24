@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboardadmin.component.css']
 })
 export class DashboardadminComponent {
+  visible: boolean = false;
 
+  affiche() {
+    this.visible = !this.visible;
+  }
 }
