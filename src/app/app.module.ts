@@ -26,7 +26,6 @@ import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/aj
 import { ModifierComponent } from './lescomposants/admin/modifier/modifier.component';
 import { DashboardpublicComponent } from './lescomposants/public/dashboardpublic/dashboardpublic.component';
 import { DashboardadminComponent } from './lescomposants/admin/dashboardadmin/dashboardadmin.component';
-import { HeaderadminComponent } from './lescomposants/admin/headeradmin/headeradmin.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +48,7 @@ import { HeaderadminComponent } from './lescomposants/admin/headeradmin/headerad
     DepmediaComponent,
     DashboardpublicComponent,
     DashboardadminComponent,
-    HeaderadminComponent  ],
+     ],
   imports: [
     BrowserModule,
     AppRoutingModule,

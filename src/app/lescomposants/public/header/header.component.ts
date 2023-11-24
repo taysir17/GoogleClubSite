@@ -12,7 +12,6 @@ export class HeaderComponent {
 
   affiche() {
     this.divVisible = !this.divVisible;
-    console.log(this.divVisible)
   }
 }
 

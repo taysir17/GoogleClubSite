@@ -1,2 +1,107 @@
-<app-headeradmin></app-headeradmin>
-<router-outlet></router-outlet>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+
+
+  </style>
+</head>
+<body>
+    <div class="d1">
+        <div class="nav">
+          <div style="border-bottom: 1px white solid;width:250px;">
+            Admin workspace
+          </div>
+          <div class="profile">
+            <img src="tay.jpg" alt="">
+            <h5>taissir bouzidi</h5>
+          </div>
+          <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div>
+            <a href=""><span>liste des membres</span></a><br>
+            <a href=""><span>liste des activités</span> </a><br>
+            <div (click)="affiche()" class="lien"><span >consulter message</span></div>
+          </div>
+        <div class="logout">
+          <a routerLink="/interface">Deconnexion</a>
+        </div>
+        </div>
+        <div >
+          <div class="box">
+          <div class="contenu" style="background-color: #B31312;">
+            <h3></h3>
+            
+          </div>
+          <div class="contenu">
+            <h3></h3>
+           
+          </div>
+          <div class="contenu" style="background-color: #141E46;">
+            <h3></h3>
+            
+          
+          </div>
+        </div>
+          <div class="table-container">
+            <div class="description">
+              <h1>liste des membres</h1>
+            </div>
+            <table>
+              <tr>
+                <th colspan="2">Les membres</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td><button class="btn btn-light">changer le role</button></td>
+                
+              </tr>
+            </table>
+        </div>
+        <div class="table-container">
+          <div class="description">     
+            <h1>liste des formations</h1>
+            <button class="btn btn-light">Ajouter</button>
+          </div>
+         
+
+          <table>
+            <tr>
+            
+              <th>Les formations</th>
+              <th>Date de formation </th>
+              <th>nombre de place restant</th>
+              <th>Parametres</th>
+            
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td> 
+                <button class="btn btn-light">Supprimer</button>
+                <button class="btn btn-light">Modifier</button>
+              </td>
+            </tr>
+          </table>
+      </div>
+      <div class="message-container"  *ngIf=visible>
+        <img src="your-image.jpg" alt="Profile Image" class="profile-img" width="50" height="50">
+        <div class="text-container">
+          <p>fdskldjsqndskjd.</p>
+        </div>
+        <button class="btn btn-light">Répondre</button>
+      </div>
+      </div>
+      
+      </div>
+  
+</body>
+</html>
