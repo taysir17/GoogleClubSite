@@ -1,5 +1,5 @@
 {
-  "formulaire": [
+  "personne": [
     {
       "nometprenom": "jhondolé",
       "email": "exemple@gmail.com",
@@ -24,8 +24,18 @@
       "nbheure": 23,
       "certifie": false,
       "datedebut": "2222-02-12",
-      "condidat": [],
-      "id": 4
+      "id": 4,
+      "candidat": [
+        {
+          "nometprenom": "aziz",
+          "email": "aziz@gmail.com",
+          "phone": 123488999,
+          "password": "azizbm2003",
+          "role": "public",
+          "id": "1LWCh-Z"
+        }
+      ]
     }
-  ]
+  ],
+  "message": []
 }

@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Form } from '../lesclasses/form';
 import { Observable } from 'rxjs';
-const URL = "http://localhost:3000/formulaire"
+const URL = "http://localhost:3000/personne"
 
 @Injectable({
   providedIn: 'root'

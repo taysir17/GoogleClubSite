@@ -26,8 +26,8 @@ import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/aj
 import { ModifierComponent } from './lescomposants/admin/modifier/modifier.component';
 import { DashboardpublicComponent } from './lescomposants/public/dashboardpublic/dashboardpublic.component';
 import { DashboardadminComponent } from './lescomposants/admin/dashboardadmin/dashboardadmin.component';
-import { HeaderadminComponent } from './lescomposants/admin/headeradmin/headeradmin.component';
 import { ModifiermdpComponent } from './lescomposants/modifiermdp/modifiermdp.component';
+import { FormationComponent } from './lescomposants/public/formation/formation.component';
 
 @NgModule({
   declarations: [
@@ -50,8 +50,8 @@ import { ModifiermdpComponent } from './lescomposants/modifiermdp/modifiermdp.co
     DepmediaComponent,
     DashboardpublicComponent,
     DashboardadminComponent,
-    HeaderadminComponent,
-    ModifiermdpComponent  ],
+    ModifiermdpComponent,
+    FormationComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

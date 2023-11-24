@@ -10,6 +10,9 @@ const URL="http://localhost:3000/formation"
 })
 export class FormationService {
   constructor(private http:HttpClient){}
+  patchformation(id:string, data:any):Observable<Formation>{
+    return this.http.patch<Formation>(URL+"/"+ id, data);
+    }
   getformation():Observable<Formation[]>{
     return this.http.get<Formation[]>(URL);
     }

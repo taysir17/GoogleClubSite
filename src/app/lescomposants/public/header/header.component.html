@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,61 +8,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="container-fluid bg-dark py-2 d-none d-md-flex">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <div id="note" class="text-secondary d-none d-xl-flex"><small>We help you to grow your career.</small></div>
+                <div id="note" class="text-secondary d-none d-xl-flex"><small>We help you to grow your career.</small>
+                </div>
                 <div class="top-link d-flex gap-2">
-                    <a href="https://www.facebook.com/isetch.google.club" class="btn btn-light rounded-circle"><i class="fab fa-facebook-f text-primary"></i></a>
-                    <a href="https://www.instagram.com/isetch_google_club/" class="btn btn-light rounded-circle"><i class="fab fa-instagram text-primary"></i></a>
-                    <a href="https://www.linkedin.com/company/iset-ch-google-club/" class="btn btn-light rounded-circle"><i class="fab fa-linkedin-in text-primary"></i></a>
+                    <a href="https://www.facebook.com/isetch.google.club" class="btn btn-light rounded-circle"><i
+                            class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="https://www.instagram.com/isetch_google_club/" class="btn btn-light rounded-circle"><i
+                            class="fab fa-instagram text-primary"></i></a>
+                    <a href="https://www.linkedin.com/company/iset-ch-google-club/"
+                        class="btn btn-light rounded-circle"><i class="fab fa-linkedin-in text-primary"></i></a>
                 </div>
             </div>
         </div>
     </div>
 
 
-<div class="container-fluid bg-primary">
-    <div class="container">
-        <nav class="navbar navbar-dark navbar-expand-lg py-0">
-            <a href="index.html" class="navbar-brand">
-                <img src="assets/img/logo.png" alt="" class="img-fluid" style="max-height: 50px;">
-            </a>
-            
-            <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
-                <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                    <a  routerLink="/public/home" class="nav-item nav-link "  >Home</a>
-                    <a  routerLink="/public/about" class="nav-item nav-link" >About</a>
-                    <a  routerLink="/public/departement" class="nav-item nav-link" >Department</a>
-                    
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="assets/img/logo.png" alt="" class="img-fluid" style="max-height: 50px;">
+                </a>
 
-                    <a routerLink="/public/project" class="nav-item nav-link" >Formation</a>
-                    <a  routerLink="/public/team" class="nav-item nav-link" >Our Team</a>
-                    <a  routerLink="/public/contact" class="nav-item nav-link" >Contact</a>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <a routerLink="/public/home" class="nav-item nav-link ">Home</a>
+                        <a routerLink="/public/about" class="nav-item nav-link">About</a>
+                        <a routerLink="/public/departement" class="nav-item nav-link">Department</a>
+
+
+                        <a routerLink="/public/formation" class="nav-item nav-link">Formation</a>
+                        <a routerLink="/public/team" class="nav-item nav-link">Our Team</a>
+                        <a routerLink="/public/contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="icone-user" (click)="affiche()">
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
                 </div>
-                <div >
-                    <i class="fa-solid fa-bell" ></i>
+
+
+                <div class="descripiton" *ngIf=divVisible>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{nom}}</h5>
+                            <a routerLink="/public/modifiermdp">Changer le mot de passe</a><br>
+                            <button (click)="logout()"> Déconnexion </button>
+
+                        </div>
+
+                    </div>
                 </div>
-                <div class="icone-user" (click)="affiche()">
-                    <i class="fa-solid fa-user"></i>
-                    
-                </div>
-            </div>
-        </nav>
-        </div></div>
-        <div class="descripiton" *ngIf=divVisible>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">{{nom}}</h5>
-                <a routerLink="/public/modifiermdp">Changer le mot de passe</a><br>
-                <button (click)="logout()"> Déconnexion </button>
-                
-              </div>
-        
-            </div>
+            </nav>
         </div>
-
-  
+    </div>
 </body>
+
 </html>

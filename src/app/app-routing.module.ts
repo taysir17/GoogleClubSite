@@ -21,6 +21,7 @@ import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/aj
 import { ModifierComponent } from './lescomposants/admin/modifier/modifier.component';
 import { ModifiermdpComponent } from './lescomposants/modifiermdp/modifiermdp.component';
 import { interfaceGuard } from './interface.guard';
+import { FormationComponent } from './lescomposants/public/formation/formation.component';
 
 
 const routes: Routes = [
@@ -56,7 +57,7 @@ const routes: Routes = [
         ]
       },
       { path: "team", title: 'team', component: TeamComponent },
-      { path: "project", title: 'project', component: ProjectsComponent },
+      { path: "formation", title: 'formation', component: FormationComponent },
       { path: "", redirectTo: 'home', pathMatch: 'full' },
     ]
   },

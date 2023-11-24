@@ -22,7 +22,7 @@ export class AjoutformationComponent  implements OnInit{
       nbheure: [],
       certifie:[false],
       datedebut:[],
-      condidat:[[]]
+      candidat:[[]]
     
       
     });

@@ -24,7 +24,7 @@ export class ModifierComponent implements OnInit{
       nbheure: [this.f.nbheure],
       certifie:[this.f.certifie],
       datedebut:[this.f.datedebut],
-      condidats:[this.f.candidats]
+      candidat:[this.f.candidat]
     
       
     });
