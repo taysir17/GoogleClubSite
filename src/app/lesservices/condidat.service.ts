@@ -11,7 +11,10 @@ export class CondidatService {
   private user!:Form;
   private authentificated=0;
   constructor(private http: HttpClient) { }
+  logout(){
+    this.authentificated=0;
 
+  }
   getuser(){
     return this.user;
   }
