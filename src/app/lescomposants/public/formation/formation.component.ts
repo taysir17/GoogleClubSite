@@ -21,20 +21,6 @@ export class FormationComponent implements OnInit{
     this.getFormation()
    
   }
-   dejasinscrir(f:Formation){
-    this.x=f.candidat;
-     return !(this.x.includes(this.condidatService.getuser()))
-    
- }
-  sinscrire(f:Formation){
-    this.x=f.candidat
-    this.x.push(this.condidatService.getuser());
-    this.formationService.patchformation(f.id,{candidat:this.x}).subscribe()
-
-    
-   
-    
-  }
  
 
 }

@@ -10,11 +10,13 @@ import { CondidatService } from 'src/app/lesservices/condidat.service';
 })
 export class HeaderComponent implements OnInit{
   nom!:string;
+  profile!:string;
   user!:Form;
   constructor(private router:Router,private condidatService: CondidatService) { }
   ngOnInit(): void {
     this.user=this.condidatService.getuser();
     this.nom=this.user.nometprenom;
+    this.profile=this.user.photo;
   }
   divVisible: boolean = false;
   logout(){

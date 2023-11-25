@@ -25,14 +25,22 @@
 .project-content .text-center {
     margin-top: 1rem;
 }
-.btn-primary:hover {
-    background-color: #0077cc;
-}
 
-.btn-danger:hover {
-    background-color: #e44d4d;
-}
 .project-item:hover .project-content {
     opacity: 1;
-    background-color: rgba(153, 255, 153, 0.2); 
+    background-color: rgba(153, 255, 153, 0.2);
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    background-color: darksalmon;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+  
 }

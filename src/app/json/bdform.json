@@ -15,17 +15,68 @@
       "password": "azizbm2003",
       "role": "public",
       "id": "1LWCh-Z"
+    },
+    {
+      "nometprenom": "taissir",
+      "email": "taysir@gmail.com",
+      "phone": 123488999,
+      "password": "jdhqsdqj@12",
+      "role": "public",
+      "img": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
+      "id": "NGVq0YB"
+    },
+    {
+      "nometprenom": "dsfss",
+      "email": "tay@gmail.com",
+      "phone": 123488999,
+      "password": "jdhqsdqj@12",
+      "role": "public",
+      "id": "9tnO3NG"
+    },
+    {
+      "nometprenom": "azizbenmimoun",
+      "email": "azizbenmimoun@gmail.com",
+      "phone": "9837282",
+      "password": "azizaziz",
+      "photo": "https://www.zooplus.be/magazine/wp-content/uploads/2019/06/comprendre-le-langage-des-chats.jpg",
+      "role": "public",
+      "id": "PE35dkY"
     }
   ],
   "formation": [
     {
-      "titre": "developement",
+      "titre": "Developement",
       "image": "https://www.theforage.com/blog/wp-content/uploads/2022/12/what-is-cybersecurity.jpg",
       "nbheure": 23,
       "certifie": false,
       "datedebut": "2222-02-12",
       "id": 4,
+      "les languages": "angular,springboot",
       "candidat": [
+        {
+          "nometprenom": "aziz",
+          "email": "aziz@gmail.com",
+          "phone": 123488999,
+          "password": "azizbm2003",
+          "role": "public",
+          "id": "1LWCh-Z"
+        },
+        {
+          "nometprenom": "aziz",
+          "email": "aziz@gmail.com",
+          "phone": 123488999,
+          "password": "azizbm2003",
+          "role": "public",
+          "id": "1LWCh-Z"
+        },
+        {
+          "nometprenom": "aziz",
+          "email": "aziz@gmail.com",
+          "phone": 123488999,
+          "password": "azizbm2003",
+          "role": "public",
+          "id": "1LWCh-Z"
+        },
         {
           "nometprenom": "aziz",
           "email": "aziz@gmail.com",

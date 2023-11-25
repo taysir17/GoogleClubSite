@@ -8,6 +8,10 @@ export class Formation {
        public nbheure:string,
        public certifie:boolean,
        public datedebut:Date,
+       public leslanguages:string,
+       public domaine:string,
+       public payant:string,
+       public nombredeplace:number,
        public candidat:Form[]
     ){}
 }

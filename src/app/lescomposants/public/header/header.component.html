@@ -31,9 +31,7 @@
     <div class="container-fluid bg-primary">
         <div class="container">
             <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                <a href="index.html" class="navbar-brand">
                     <img src="assets/img/logo.png" alt="" class="img-fluid" style="max-height: 50px;">
-                </a>
 
                 <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
@@ -50,12 +48,9 @@
                         <i class="fa-solid fa-bell"></i>
                     </div>
                     <div class="icone-user" (click)="affiche()">
-                        <i class="fa-solid fa-user"></i>
-
+                        <img id="profile" [src]="profile" alt="">
                     </div>
                 </div>
-
-
                 <div class="descripiton" *ngIf=divVisible>
                     <div class="card">
                         <div class="card-body">
