@@ -9,6 +9,11 @@ import { FormationService } from 'src/app/lesservices/formation.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit{
+  visible: boolean = false;
+
+  affiche() {
+    this.visible = !this.visible;
+  }
   constructor(private router:Router,private formationService:FormationService) { }
   lesformation:Formation[]=[];
   getFormation(){

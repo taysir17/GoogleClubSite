@@ -22,8 +22,10 @@ export class FormationComponent implements OnInit{
    
   }
    dejasinscrir(f:Formation){
+
     this.x=f.candidat;
-     return !(this.x.includes(this.condidatService.getuser()))
+    
+     return (this.x.filter(e=>e.id=this.condidatService.getuser().id).length==0)
     
  }
   sinscrire(f:Formation){

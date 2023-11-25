@@ -19,23 +19,63 @@
   ],
   "formation": [
     {
-      "titre": "developement",
-      "image": "https://www.theforage.com/blog/wp-content/uploads/2022/12/what-is-cybersecurity.jpg",
-      "nbheure": 23,
-      "certifie": false,
-      "datedebut": "2222-02-12",
-      "id": 4,
-      "candidat": [
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        }
-      ]
+      "titre": "bm",
+      "image": "assets/img/login.jpg",
+      "nbheure": 50,
+      "certifie": true,
+      "datedebut": "2023-11-25",
+      "candidat": [],
+      "id": 1
     }
   ],
-  "message": []
+  "messages": [
+    {
+      "msg": "aa",
+      "user": {
+        "nometprenom": "aziz",
+        "email": "aziz@gmail.com",
+        "phone": 123488999,
+        "password": "azizbm2003",
+        "role": "public",
+        "id": "1LWCh-Z"
+      },
+      "id": 1
+    },
+    {
+      "msg": "addz",
+      "user": {
+        "nometprenom": "aziz",
+        "email": "aziz@gmail.com",
+        "phone": 123488999,
+        "password": "azizbm2003",
+        "role": "public",
+        "id": "1LWCh-Z"
+      },
+      "id": 2
+    },
+    {
+      "msg": "adad",
+      "user": {
+        "nometprenom": "aziz",
+        "email": "aziz@gmail.com",
+        "phone": 123488999,
+        "password": "azizbm2003",
+        "role": "public",
+        "id": "1LWCh-Z"
+      },
+      "id": 3
+    },
+    {
+      "msg": "az",
+      "user": {
+        "nometprenom": "aziz",
+        "email": "aziz@gmail.com",
+        "phone": 123488999,
+        "password": "azizbm2003",
+        "role": "public",
+        "id": "1LWCh-Z"
+      },
+      "id": 5
+    }
+  ]
 }

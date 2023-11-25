@@ -25,8 +25,8 @@ export class CondidatService {
   patchcondidat(id:string, data:any):Observable<Form>{
     return this.http.patch<Form>(URL+"/"+ id, data);
     }
-  getcondidat(): Observable<Form> {
-    return this.http.get<Form>(URL);
+  getcondidat(): Observable<Form[]> {
+    return this.http.get<Form[]>(URL);
   }
 
   addcondidat(p: Form): Observable<Form> {
