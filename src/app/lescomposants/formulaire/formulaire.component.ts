@@ -20,6 +20,7 @@ export class FormulaireComponent implements OnInit {
       email: ['exemple@gmail.com'],
       phone: [123488999],
       password:["jdhqsdqj@12"],
+      photo:["https://www.aquaportail.com/pictures2307/chat-domestique-europeen.jpg"],
       role:["public"]
     
       

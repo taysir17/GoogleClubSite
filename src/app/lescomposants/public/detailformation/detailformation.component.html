@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="formation-container" *ngFor="let t of lesformation">
+        <h4>{{t.titre}}</h4>
+        <img [src]="t.image" alt="">
+        <p>Nombre d'heures: {{t.nbheure}}</p>
+        <p>Date de début: {{t.datedebut}}</p>
+        <p>les languages:{{t.leslanguages}}</p>
+        <p>Certifié: {{t.certifie}}</p>
+        <button (click)="sinscrire(t)" *ngIf="dejasinscrir(t)">S'inscrire</button><BR>
+        <a routerLink="/public/formation">Retour</a>
+    </div>
+</body>
+</html>

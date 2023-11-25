@@ -28,6 +28,7 @@ import { DashboardpublicComponent } from './lescomposants/public/dashboardpublic
 import { DashboardadminComponent } from './lescomposants/admin/dashboardadmin/dashboardadmin.component';
 import { ModifiermdpComponent } from './lescomposants/modifiermdp/modifiermdp.component';
 import { FormationComponent } from './lescomposants/public/formation/formation.component';
+import { DetailformationComponent } from './lescomposants/public/detailformation/detailformation.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,9 @@ import { FormationComponent } from './lescomposants/public/formation/formation.c
     DashboardpublicComponent,
     DashboardadminComponent,
     ModifiermdpComponent,
-    FormationComponent  ],
+    FormationComponent,
+    DetailformationComponent,
+     ],
   imports: [
     BrowserModule,
     AppRoutingModule,

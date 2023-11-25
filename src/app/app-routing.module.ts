@@ -22,6 +22,7 @@ import { ModifierComponent } from './lescomposants/admin/modifier/modifier.compo
 import { ModifiermdpComponent } from './lescomposants/modifiermdp/modifiermdp.component';
 import { interfaceGuard } from './interface.guard';
 import { FormationComponent } from './lescomposants/public/formation/formation.component';
+import { DetailformationComponent } from './lescomposants/public/detailformation/detailformation.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,7 @@ const routes: Routes = [
   },
   {
     path: "public", title: 'public', component: DashboardpublicComponent, canActivate: [publicGuard], children: [
+     
 
       { path: "modifiermdp", title: 'modifiermdp', component: ModifiermdpComponent },
 
@@ -58,12 +60,14 @@ const routes: Routes = [
       },
       { path: "team", title: 'team', component: TeamComponent },
       { path: "formation", title: 'formation', component: FormationComponent },
+      {path:"detailformation",title:"detailformation",component:DetailformationComponent},
       { path: "", redirectTo: 'home', pathMatch: 'full' },
     ]
   },
 
   { path: "congratulation", title: "congratulation", component: CongratulationsComponent },
   { path: "login", title: "login", component: LoginComponent },
+  {path:"detailformation",title:"detailformation",component:DetailformationComponent},
   { path: "", redirectTo: 'interface', pathMatch: 'full' },
   { path: "**", title: 'erreur', component: ErreurComponent }
 ];
