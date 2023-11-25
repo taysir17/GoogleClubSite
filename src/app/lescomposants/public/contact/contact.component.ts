@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { Form } from 'src/app/lesclasses/form';
 import { CondidatService } from 'src/app/lesservices/condidat.service';
 import { MessageService } from 'src/app/lesservices/message.service';
-import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-contact',
