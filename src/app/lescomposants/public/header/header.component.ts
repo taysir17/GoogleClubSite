@@ -26,6 +26,8 @@ export class HeaderComponent implements OnInit{
 
   affiche() {
     this.divVisible = !this.divVisible;
-  }
+}
+
+
 }
 

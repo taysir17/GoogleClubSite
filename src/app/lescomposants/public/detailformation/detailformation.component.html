@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="formation-container" >
-        <h4>{{f.titre}}</h4>
-        <img [src]="f.image" alt="">
-        <p>Nombre d'heures: {{f.nbheure}}</p>
-        <p>Date de début: {{f.datedebut}}</p>
-        <p>les modules:{{f.lesmodules}}</p>
-        <p [ngClass]="{'certifie-oui': f.certifie, 'certifie-non': !f.certifie}">Certifié: {{ f.certifie ? 'Oui' : 'Non' }}</p>
-        <button (click)="sinscrire(f)" *ngIf="dejasinscrir(f)">S'inscrire</button><BR>
-        <a routerLink="/public/lesformation">Retour</a>
-    </div>
+  <div>
+    <h4>{{ f.titre }}</h4>
+    <img [src]="f.image" alt="Formation Image">
+    <p><span>Nombre d'heures:</span> {{ f.nbheure }}</p>
+    <p><span>Date de début:</span> {{ f.datedebut | date: 'dd/MM/yyyy' }}</p>
+    <p><span>Les modules:</span>{{ f.lesmodules }}</p>
+    <p [ngClass]="{'payant-oui': f.payant, 'payant-non': !f.payant}">
+      <span>Payant:</span> {{ f.payant ? f.prix  : 'gratuit' }}
+    </p>
+    <p [ngClass]="{'certifie-oui': f.certifie, 'certifie-non': !f.certifie}">
+      <span>Certifié:</span> {{ f.certifie ? 'Oui' : 'Non' }}
+    </p>
+    <button (click)="sinscrire(f)" *ngIf="dejasinscrir(f)">S'inscrire</button><br>
+    <a routerLink="/public/lesformation">Retour</a>
+  </div>
 </body>
+
 </html>

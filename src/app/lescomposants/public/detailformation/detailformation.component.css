@@ -1,62 +1,102 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: white;
+    color: #333;
 }
 
-.formation-container {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+div {
+    max-width: 600px;
+    margin: 50px auto;
     padding: 20px;
-    border-radius: 8px;
+    background-color: #607D8B;
+    box-shadow: 0 0 5px #3F51B5;
     text-align: center;
-    margin: 10px;
-    max-width: 300px;
+    border-radius: 10px;
 }
 
 h4 {
-    color: #1E88E5
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 img {
-    max-width: 600px;
-    height: 100px;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 p {
-    margin: 5px 0;
-    color: #757575;
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #fff;
+    text-align: left;
+}
+
+span {
+    font-weight: bold;
+    margin-right: 5px;
+    display: inline-block;
+    width: 150px;
+    color: #fff;
+}
+
+strong {
+    color: #e74c3c; 
+}
+
+.normal-text {
+    color: #3498db; 
 }
 
 button {
-    background-color: #4CAF50;
+    padding: 10px 20px;
+    background-color: #27ae60; 
     color: #fff;
-    padding: 10px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #2ecc71;
 }
+
 a {
-    color: #4CAF50;
+    display: block;
+    margin-top: 20px;
+    color: #f39c12; 
     text-decoration: none;
-    background-color: darksalmon;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
 }
 
 a:hover {
     text-decoration: underline;
-  
+}
+
+.payant-oui {
+    color: #DC8686;
+}
+
+.payant-non {
+    color: #860A35; 
+}
+
+.certifie-oui {
+    color: #f39c12; 
+}
+
+.certifie-non {
+    color: #164863; 
+}
+
+.gratuit {
+    color: #7ED7C1;
+}
+
+.non {
+    color: #e74c3c;
 }

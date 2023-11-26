@@ -1,73 +1,103 @@
-.project-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 0;
+    text-align: center; 
+    padding: 20px 0; 
+}
+
+.form-check-label:hover:after {
+    background-color: blue; 
+}
+
+
+.input-group {
+    margin-top: 15px;
+}
+input[type="checkbox"] {
+   
+    margin-left: 150px;
+    
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.btn-outline-secondary {
+    padding: 6px ;
+    height: 38px;
+}
+
+/* Formation Styles */
+.row {
+    margin-top: 20px;
+}
+
+.col-md-4 {
+    margin-bottom: 20px;
+}
+
+
+.wow {
+    visibility: hidden;
+}
+/* Ajoutez ces styles pour améliorer l'aperçu des checkbox et espacer de manière élégante */
+.col-md-4 {
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Couleur de fond pour la partie des checkbox */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+/* Style pour rendre les checkbox plus jolis */
+.form-check-input {
+    margin-right: 8px; /* Espace à droite des checkbox */
+}
+
+/* Style pour les labels des checkbox */
+.form-check-label {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-.project-content h4 {
-    margin-bottom: 0.5rem;
+/* Ajoutez une légère ombre à la partie des checkbox pour la démarquer du reste de la page */
+.col-md-4 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.project-content p {
-    margin: 0;
-}
-
-.project-content .text-center {
-    margin-top: 1rem;
-}
-
-.project-item:hover .project-content {
-    opacity: 1;
-    background-color: rgba(153, 255, 153, 0.2);
-}
-
-a {
-    color: #4CAF50;
-    text-decoration: none;
-    background-color: darksalmon;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-a:hover {
-    text-decoration: underline;
-  
-}
-.search-container {
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 250px;
-    margin-top: 10px;
+/* Styles pour les espacements dans la partie du contenu central */
+.col-md-8 {
     margin-bottom: 20px;
-  }
-  
-  .search-container input {
-    flex: 1;
-    border: none;
-    padding: 10px;
-  }
-  
-  .search-container i {
-    padding: 10px;
-    background-color: #ddd;
-    border-left: 1px solid #ccc;
-    cursor: pointer;
-  }
-  
-  .search-container i:hover {
-    background-color: #bbb;
-  }
- 
+}
+
+/* Ajoutez une légère ombre pour démarquer la partie du contenu central */
+.col-md-8 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    input[type="text"] {
+        width: 100%;
+    }
+}

@@ -50,6 +50,19 @@
   ],
   "formation": [
     {
+      "titre": "Developement",
+      "image": "https://www.theforage.com/blog/wp-content/uploads/2022/12/what-is-cybersecurity.jpg",
+      "nbheure": 23,
+      "certifie": false,
+      "datedebut": "2222-02-12",
+      "prix": 0,
+      "id": 4,
+      "nombredeplace": 20,
+      "les modules": "angular,springboot",
+      "Payant":false,
+      "candidat": []
+    },
+    {
       "titre": "Cyber Sécurité",
       "image": "https://as1.ftcdn.net/v2/jpg/05/87/30/02/1000_F_587300228_IcAeKZu4oDwH4YrGt2hExS42Srt95qmc.jpg",
       "nbheure": 64,
@@ -59,11 +72,23 @@
       "prix": 250,
       "nombredeplace": 9,
       "les modules": "notions de bases,Gestion et organisation de la cybersécurité",
-      "domaine": "IT",
-      "Payant": "oui",
-      "candidat": [
-        null
-      ]
+      "domaine":"IT",
+      "Payant":true,
+      "candidat": []
+    },
+    {
+      "titre": "Finance",
+      "image": "https://www.emlv.fr/wordpress/wp-content/uploads/2018/11/shutterstock_750073606-650x380.jpg",
+      "nbheure": 10,
+      "certifie": true,
+      "datedebut": "2023-02-12",     
+       "id": 9,
+       "prix":0,
+      "nombredeplace": 10,
+      "les modules": "Le temps et la valeur de l'argent,La gestion financière",
+      "domaine":"MGT",
+      "Payant":false,
+      "candidat": []
     },
     {
       "titre": "node js",
@@ -73,8 +98,8 @@
       "datedebut": "2024-02-9",
       "prix": 80,
       "id": 6,
-      "nombredeplace": 9,
-      "Payant": "oui",
+      "nombredeplace": 10,
+      "Payant":true,
       "les modules": "sql/no sqp,cloud:Aws",
       "candidat": [
         null,
