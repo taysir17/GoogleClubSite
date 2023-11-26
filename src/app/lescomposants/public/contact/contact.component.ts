@@ -22,8 +22,8 @@ export class ContactComponent {
    
     this.message = this.formBuilder.nonNullable.group({
       msg:["",Validators.required],
-      user:[this.user]
-    
+      user:[this.user],
+      reponse:[""]
       
     
       

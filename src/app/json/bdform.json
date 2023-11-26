@@ -13,7 +13,7 @@
       "email": "aziz@gmail.com",
       "phone": 123488999,
       "password": "azizbm2003",
-      "role": "public",
+      "role": "admin",
       "id": "1LWCh-Z"
     },
     {
@@ -21,7 +21,7 @@
       "email": "taysir@gmail.com",
       "phone": 123488999,
       "password": "jdhqsdqj@12",
-      "role": "public",
+      "role": "admin",
       "img": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
       "id": "NGVq0YB"
     },
@@ -39,7 +39,7 @@
       "phone": "9837282",
       "password": "azizaziz",
       "photo": "https://www.zooplus.be/magazine/wp-content/uploads/2019/06/comprendre-le-langage-des-chats.jpg",
-      "role": "public",
+      "role": "admin",
       "id": "PE35dkY"
     },
     {
@@ -48,7 +48,7 @@
       "phone": 123488999,
       "password": "jdhqsdqj@12",
       "photo": "https://www.aquaportail.com/pictures2307/chat-domestique-europeen.jpg",
-      "role": "public",
+      "role": "admin",
       "id": "GwCE2UE"
     }
   ],
@@ -61,67 +61,9 @@
       "datedebut": "2222-02-12",
       "prix": 0,
       "id": 4,
+      "nombredeplace": 20,
       "les languages": "angular,springboot",
-      "candidat": [
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        },
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        },
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        },
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        },
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        }
-      ]
-    },
-    {
-      "titre": "bmaziz",
-      "image": "assets/img/login.jpg",
-      "nbheure": 50,
-      "certifie": true,
-      "datedebut": "2023-11-17",
-      "candidat": [
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        }
-      ],
-      "id": 5
+      "candidat": []
     }
   ],
   "messages": [

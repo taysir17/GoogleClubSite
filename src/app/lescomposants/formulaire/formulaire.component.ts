@@ -16,12 +16,13 @@ export class FormulaireComponent implements OnInit {
 
   ngOnInit(): void {
     this.personne = this.formBuilder.group({
-      nometprenom: ['jhondolé',Validators.required],
+      nometprenom: ['jhondolé',[Validators.required]],
       email: ['exemple@gmail.com',[Validators.required, Validators.email]],
       phone: [123488999, [Validators.required, Validators.pattern(/^\d{8}$/)]],
       password:["jdhqsdqj@12", [Validators.required, Validators.minLength(8)]],
       photo:["https://www.aquaportail.com/pictures2307/chat-domestique-europeen.jpg", Validators.required],
-      role:["public"]
+      role:["public"],
+      nbvisite:[0],
     
       
     });

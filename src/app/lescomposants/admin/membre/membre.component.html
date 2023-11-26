@@ -1,0 +1,33 @@
+<section class="contenu">
+ 
+
+    
+    
+    <div class="table-container">
+      <div class="description">
+        <h1>liste des membres</h1>
+      </div>
+
+
+      <table >
+        <tr>
+
+          <th>Nom</th>
+          <th>email </th>
+          <th>nombre de visite</th>
+          <th>Parametres</th>
+
+        </tr>
+        <tr *ngFor="let m of lespublic">
+            <td>
+                {{m.nometprenom}}
+            </td>
+            <td>{{m.email}}</td>
+            <td>{{m.nbvisite}}</td>
+            <td><button (click)="rendreAdmin(m)">Rendre Admin</button></td>
+        </tr>
+        
+      </table>
+      
+    </div>
+  </section>
