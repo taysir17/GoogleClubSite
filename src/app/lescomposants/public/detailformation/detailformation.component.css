@@ -24,8 +24,8 @@ h4 {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 600px;
+    height: 100px;
     margin-bottom: 10px;
     border-radius: 4px;
 }

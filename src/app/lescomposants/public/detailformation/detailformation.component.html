@@ -12,8 +12,8 @@
         <img [src]="f.image" alt="">
         <p>Nombre d'heures: {{f.nbheure}}</p>
         <p>Date de début: {{f.datedebut}}</p>
-        <p>les languages:{{f.leslanguages}}</p>
-        <p>Certifié: {{f.certifie}}</p>
+        <p>les modules:{{f.lesmodules}}</p>
+        <p [ngClass]="{'certifie-oui': f.certifie, 'certifie-non': !f.certifie}">Certifié: {{ f.certifie ? 'Oui' : 'Non' }}</p>
         <button (click)="sinscrire(f)" *ngIf="dejasinscrir(f)">S'inscrire</button><BR>
         <a routerLink="/public/lesformation">Retour</a>
     </div>

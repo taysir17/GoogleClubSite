@@ -1,42 +1,31 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-}
-
-.container-fluid {
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 5% auto;
-    margin-top: 150px;
-    max-width: 600px;
-    padding-top: 20px;
-}
-
-.text-primary {
+  .text-primary {
     color: #007bff;
-}
+  }
 
-h1, h5 {
+  h1,
+  h5 {
     margin: 0;
-}
+  }
 
-.contact-form {
-    background-color: #ffffff;
+  .contact-form {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-}
+    margin-top: 70px;
 
-label {
+    border-radius: 10px;
+    box-shadow: 0 0 5px #3F51B5;
+    background-color: #607D8B;
+    color: #333;
+  }
+
+  label {
     display: block;
     margin-bottom: 8px;
-    color: #333;
-}
+    color: #0b3a60;
+  }
 
-input {
+  input {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;
@@ -44,13 +33,14 @@ input {
     border: 1px solid #ced4da;
     border-radius: 5px;
     outline: none;
-}
+    box-shadow: inset 0 0 5px #007bff;
+  }
 
-input[type="radio"] {
+  input[type="radio"] {
     margin-right: 5px;
-}
+  }
 
-button {
+  button {
     cursor: pointer;
     background-color: #007bff;
     color: #ffffff;
@@ -58,18 +48,21 @@ button {
     padding: 12px 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
-    margin-top: 10px; 
-}
+    margin-top: 10px;
+    font-size: 16px;
+  }
 
-button:hover {
+  button:hover {
     background-color: #0056b3;
-}
-.error {
+  }
+
+  .error {
     border: 1px solid red;
   }
-  
+
   .error-message {
-    color: red;
-    font-size: 12px;
+    color: rgb(228, 2, 2);
+    font-size: 14px;
+    font-weight: 600;
     margin-top: 5px;
   }
