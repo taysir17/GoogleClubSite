@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   condidat!: FormGroup;
   tableauForms: Form[] = [];
+  visible: boolean = false; 
 
   constructor(
     private formBuilder: FormBuilder,
@@ -41,7 +42,7 @@ export class LoginComponent implements OnInit {
         this.router.navigate(["/admin"])
       }
       else{
-        alert("aa")
+        this.visible=true;
       }
 
       

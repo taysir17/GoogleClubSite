@@ -8,7 +8,6 @@ import { TeamComponent } from './lescomposants/public/team/team.component';
 import { ErreurComponent } from './lescomposants/erreur/erreur.component';
 import { ProjectsComponent } from './lescomposants/admin/projects/projects.component';
 import { FormulaireComponent } from './lescomposants/formulaire/formulaire.component';
-import { CongratulationsComponent } from './lescomposants/congratulations/congratulations.component';
 import { LoginComponent } from './lescomposants/login/login.component';
 import { DepmediaComponent } from './lescomposants/public/depmedia/depmedia.component';
 import { InterfaceComponent } from './lescomposants/interface/interface.component';
@@ -21,8 +20,9 @@ import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/aj
 import { ModifierComponent } from './lescomposants/admin/modifier/modifier.component';
 import { ModifiermdpComponent } from './lescomposants/modifiermdp/modifiermdp.component';
 import { interfaceGuard } from './interface.guard';
-import { FormationComponent } from './lescomposants/public/formation/formation.component';
+
 import { DetailformationComponent } from './lescomposants/public/detailformation/detailformation.component';
+import { FormationComponent } from './lescomposants/public/formation/formation.component';
 
 
 const routes: Routes = [
@@ -65,7 +65,6 @@ const routes: Routes = [
     ]
   },
 
-  { path: "congratulation", title: "congratulation", component: CongratulationsComponent },
   { path: "login", title: "login", component: LoginComponent },
   {path:"detailformation",title:"detailformation",component:DetailformationComponent},
   { path: "", redirectTo: 'interface', pathMatch: 'full' },

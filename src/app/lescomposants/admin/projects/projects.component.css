@@ -1,177 +1,19 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-  }
-  
-  .d1 {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .nav {
-    background-color: #333;
-    width: 250px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    padding: 20px 0;
-  }
-  .nav a span {
-    display: block;
-    padding: 10px; 
-    width: 100%;
-    box-sizing: border-box;
-    
-  }
-  .nav a{
-    text-decoration: none; 
-    color: white;
-    margin-left: -70px;
-    padding: 5px; 
-    font-size: 1.1em; 
-    display: block; 
-    position: relative;
-    display: inline-block;
-    margin-bottom: 5px; 
-    width: 180px;
-  }
-  
-  .nav a:hover span {
-    background-color:  #336699;
-    width: 245px ;
-  }
-  .lien span {
-    display: block;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    transition: width 0.3s ease-in-out, height 0.3s ease-in-out; /* Added transition for width and height */
-  }
-  
-  .lien {
-    text-decoration: none;
-    color: white;
-    margin-left: -70px;
+.contenu {
+    background-color: #cFE8FF;
     padding: 5px;
-    font-size: 1.1em;
-    display: block;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 5px;
-    width: 180px;
-    overflow: hidden;
-    transition: width 0.3s ease-in-out;
+    margin-left: 250px;
+    margin-top: 10px;
+   
   }
-  
-  .lien:hover span {
-    background-color: #336699;
-    width: auto;
-    height: 50px; 
-  }
-  
-  
 
   
-  
-  .nav::after {
-    content: '';
-    width: 100%;
-    margin-top: 10px;
-  }
-  
-  .nav > div:first-child {
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 15px 0;
-    margin-top: 10px;
-  }
-  
-  .profile {
-    display: flex;
-    align-items: center;
-    padding: 15px ;
-    width: 250px;
-  }
-  
-  .profile img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 15px; 
-  }
-  
-  .profile h5 {
-    margin: 0;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  
-  .search-container {
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 250px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .search-container input {
-    flex: 1;
-    border: none;
-    padding: 10px;
-  }
-  
-  .search-container i {
-    padding: 10px;
-    background-color: #ddd;
-    border-left: 1px solid #ccc;
-    cursor: pointer;
-  }
-  
-  .search-container i:hover {
-    background-color: #bbb;
-  }
- 
-
-  .box {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 70px;
-  }
-  
-  .contenu {
-    background-color: #79AC78;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    padding: 5px;
-    width: 250px;
-    margin-right: 60px;
-    margin-top: 20px;
-    height: 200px;
-    border-radius: 10px;
-  }
-  
-  .contenu h3 {
-    color: white;
-    text-align: center;
-  }
-  
-  .contenu button {
-    width: 100px;
-    padding: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
   
   
   .table-container {
     background-color: white;
     padding: 20px; 
     margin-top: 80px;
-    margin-left:-40px;
+    margin-left:30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 1000px;
   }
@@ -232,4 +74,45 @@ body {
   justify-content: space-between;
   padding: 20px;
 }
-  
+
+.box-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 24px;
+    margin-top: 36px;
+    display: flex;
+    
+  }
+   .box-info li{
+    padding: 24px;
+    background: #F9F9F9;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    flex-direction: column; 
+  text-align: center;
+  width: 320px;
+    grid-gap: 24px;
+  }
+   .box-info li .bx{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .box-info li:nth-child(1) .bx{
+    background:#ADD8E6;
+    color:#3C91E6;
+  }
+   .box-info li:nth-child(2) .bx{
+    background:#FFF2C6;
+    color:#FFCE26;
+  }
+   .box-info li:nth-child(3) .bx{
+    background:#FFE0D3;
+    color:#FD7238,
+  }

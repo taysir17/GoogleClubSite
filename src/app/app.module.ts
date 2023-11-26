@@ -17,7 +17,6 @@ import { ProjectsComponent } from './lescomposants/admin/projects/projects.compo
 import { FormulaireComponent } from './lescomposants/formulaire/formulaire.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CongratulationsComponent } from './lescomposants/congratulations/congratulations.component';
 import { LoginComponent } from './lescomposants/login/login.component';
 import { DepdevComponent } from './lescomposants/public/depdev/depdev.component';
 import { DepmediaComponent } from './lescomposants/public/depmedia/depmedia.component';
@@ -46,7 +45,7 @@ import { PrixPipe } from './prix.pipe';
     ErreurComponent,
     ProjectsComponent,
     FormulaireComponent,
-    CongratulationsComponent,
+    
     LoginComponent,
     DepdevComponent,
     DepmediaComponent,

@@ -13,7 +13,6 @@ export class CondidatService {
   constructor(private http: HttpClient) { }
   logout(){
     this.authentificated=0;
-
   }
   getuser(){
     return this.user;
