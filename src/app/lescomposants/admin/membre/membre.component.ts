@@ -20,8 +20,9 @@ export class MembreComponent implements OnInit{
   getpublic(){
     this.condidatService.getpublic().subscribe(data=>this.lespublic=data)
   }
-  rendreAdmin(m:Form){
+  rendreAdmin(m:Form,i:number){
     this.condidatService.patchcondidat(m.id,{role:"admin"}).subscribe()
+    this.lespublic.splice(i,1)
     
   }
 }

@@ -27,6 +27,7 @@ import { ListformationComponent } from './lescomposants/public/listformation/lis
 import { MembreComponent } from './lescomposants/admin/membre/membre.component';
 import { MessageService } from './lesservices/message.service';
 import { MessagesComponent } from './lescomposants/admin/messages/messages.component';
+import { ReponseComponent } from './lescomposants/public/reponse/reponse.component';
 
 
 const routes: Routes = [
@@ -50,12 +51,9 @@ const routes: Routes = [
   },
   {
     path: "public", title: 'public', component: DashboardpublicComponent, canActivate: [publicGuard], children: [
-     
-
       { path: "modifiermdp", title: 'modifiermdp', component: ModifiermdpComponent },
-
+      { path: "reponse", title: 'reponse', component: ReponseComponent },
       { path: "home", title: 'home', component: HomeComponent },
-
       { path: "about", title: 'about', component: AboutComponent },
       { path: "contact", title: 'contact', component: ContactComponent },
       {

@@ -12,8 +12,8 @@ export class MessageService {
   addmessage(m:Message):Observable<Message>{
     return this.http.post<Message>(URL, m);
     }
-  getmessages():Observable<Message[]>{
-    return this.http.get<Message[]>(URL);
+  getmessages(info:string):Observable<Message[]>{
+    return this.http.get<Message[]>(URL+info);
     }
   patchmessage(id:string, data:any):Observable<Message>{
     return this.http.patch<Message>(URL+"/"+ id, data);
