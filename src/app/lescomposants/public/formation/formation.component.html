@@ -3,6 +3,12 @@
         <div class="container text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
             <h1 class="display-4 text-primary mb-0">Our Formation</h1>
         </div>
+        Free <input type="checkbox" #free>
+        <div class="search-container">
+            <input type="text" placeholder="categorie" id="categorie" #categorie>
+            
+            <i class="fa fa-search" aria-hidden="true" (click)="chercher(categorie.value,free.checked)"></i>
+          </div>
     </div>
     
     

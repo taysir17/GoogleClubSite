@@ -44,3 +44,30 @@ a:hover {
     text-decoration: underline;
   
 }
+.search-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+  }
+  
+  .search-container i {
+    padding: 10px;
+    background-color: #ddd;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .search-container i:hover {
+    background-color: #bbb;
+  }
+ 

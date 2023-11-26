@@ -30,7 +30,8 @@ export class ModifierComponent implements OnInit{
     });
   }
   onSubmitForm() {
-    this.formationService.updateformation(this.f.id, this.formation.value).subscribe((data: any) => this.router.navigate(['/project']));
+    alert("aa")
+    this.formationService.updateformation(this.f.id, this.formation.value).subscribe((data: any) => this.router.navigate(['/admin']));
   }
   
     

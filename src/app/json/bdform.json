@@ -50,6 +50,7 @@
       "nbheure": 23,
       "certifie": false,
       "datedebut": "2222-02-12",
+      "prix": 0,
       "id": 4,
       "les languages": "angular,springboot",
       "candidat": [
@@ -86,6 +87,15 @@
           "id": "1LWCh-Z"
         }
       ]
+    },
+    {
+      "titre": "bmaziz",
+      "image": "assets/img/login.jpg",
+      "nbheure": 50,
+      "certifie": true,
+      "datedebut": "2023-11-17",
+      "candidat": [],
+      "id": 5
     }
   ],
   "messages": [

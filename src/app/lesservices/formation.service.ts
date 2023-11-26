@@ -13,8 +13,8 @@ export class FormationService {
   patchformation(id:string, data:any):Observable<Formation>{
     return this.http.patch<Formation>(URL+"/"+ id, data);
     }
-  getformation():Observable<Formation[]>{
-    return this.http.get<Formation[]>(URL);
+  getformation(info:string):Observable<Formation[]>{
+    return this.http.get<Formation[]>(URL+info);
     }
   addformation(p:Formation):Observable<Formation>{
     return this.http.post<Formation>(URL, p);

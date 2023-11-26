@@ -16,7 +16,7 @@ export class DetailformationComponent implements OnInit{
     constructor(private router:Router,private formationService:FormationService,private condidatService: CondidatService) { }
     lesformation:Formation[]=[];
     getFormation(){
-      this.formationService.getformation().subscribe (data=>this.lesformation=data) }
+      this.formationService.getformation("").subscribe (data=>this.lesformation=data) }
     
     ngOnInit(): void {
       this.getFormation()

@@ -12,4 +12,7 @@ export class MessageService {
   addmessage(m:Message):Observable<Message>{
     return this.http.post<Message>(URL, m);
     }
+  getmessages():Observable<Message[]>{
+    return this.http.get<Message[]>(URL);
+    }
 }

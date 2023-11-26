@@ -19,12 +19,9 @@
           </div>
           <div class="profile">
             <img src="tay.jpg" alt="">
-            <h5>taissir bouzidi</h5>
+            <h5>{{user.nometprenom}}</h5>
           </div>
-          <div class="search-container">
-            <input type="text" placeholder="Search...">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </div>
+          
           <div>
             <a href=""><span>liste des membres</span></a><br>
             <a href=""><span>liste des activités</span> </a><br>
@@ -56,10 +53,12 @@
             </div>
             <table>
               <tr>
-                <th colspan="2">Les membres</th>
+                <th >Nom Et Prenom</th>
+                <th>Email</th>
               </tr>
-              <tr>
-                <td></td>
+              <tr *ngFor="let p of lespublic">
+                <td>{{p.nometprenom}}</td>
+                <td>{{p.email}}</td>
                 <td><button class="btn btn-light">changer le role</button></td>
                 
               </tr>
@@ -68,6 +67,10 @@
         <div class="table-container">
           <div class="description">     
             <h1>liste des formations</h1>
+            <div class="search-container">
+              <input type="text" placeholder="titre" #titre>
+              <i class="fa fa-search" aria-hidden="true" (click)="chercher(titre.value)"></i>
+            </div>
             <button class="btn btn-light" (click)="ajouter()">Ajouter</button>
           </div>
          
@@ -103,3 +106,4 @@
       </div>
       
       </div>
+      {{lesmessage|json}}

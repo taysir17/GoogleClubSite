@@ -35,6 +35,6 @@ export class AjoutformationComponent  implements OnInit{
     
 
   ajouter() {
-    this.formationService.addformation(this.formation.value).subscribe((data: any) => this.router.navigate(['/project']));
+    this.formationService.addformation(this.formation.value).subscribe((data: any) => this.router.navigate(['/admin']));
   }
 }

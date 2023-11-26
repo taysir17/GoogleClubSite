@@ -12,10 +12,11 @@ import { FormationService } from 'src/app/lesservices/formation.service';
 })
 export class FormationComponent implements OnInit{
   x:Form[]=[];
+  c!:string;
   constructor(private router:Router,private formationService:FormationService,private condidatService: CondidatService) { }
   lesformation:Formation[]=[];
   getFormation(){
-    this.formationService.getformation().subscribe (data=>this.lesformation=data) }
+    this.formationService.getformation("").subscribe (data=>this.lesformation=data) }
   
   ngOnInit(): void {
     this.getFormation()
@@ -28,6 +29,17 @@ export class FormationComponent implements OnInit{
      return (this.x.filter(e=>e.id=this.condidatService.getuser().id).length==0)
     
  }
+ chercher(categorie:string,free:boolean){
+  this.c="?"
+  if(categorie!="")
+    this.c+="&titre="+categorie;
+  if(free)
+    this.c+="&prix=0";
+  
+  this.formationService.getformation(this.c).subscribe (data=>this.lesformation=data)
+
+  }
+ 
   sinscrire(f:Formation){
     this.x=f.candidat
     this.x.push(this.condidatService.getuser());

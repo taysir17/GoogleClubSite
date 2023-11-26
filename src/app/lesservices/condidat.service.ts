@@ -22,9 +22,13 @@ export class CondidatService {
       this.user=u;
 
   }
+  
   patchcondidat(id:string, data:any):Observable<Form>{
     return this.http.patch<Form>(URL+"/"+ id, data);
     }
+  getpublic():Observable<Form[]> {
+    return this.http.get<Form[]>(URL+"?role=public");
+  }
   getcondidat(): Observable<Form[]> {
     return this.http.get<Form[]>(URL);
   }
