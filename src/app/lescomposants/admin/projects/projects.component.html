@@ -41,7 +41,7 @@
       </li>
     </ul>
 
-    
+
     <div class="table-container">
       <div>
         <h1>liste des formations</h1>
@@ -49,7 +49,7 @@
       </div>
 
 
-      <table >
+      <table>
         <tr>
 
           <th>Les formations</th>
@@ -59,7 +59,7 @@
 
         </tr>
         <tr *ngFor="let f of lesformation;index as i">
-          
+
           <td>{{f.titre}}</td>
           <td>{{f.datedebut|date:'dd MMMM yyyy' | uppercase}}</td>
           <td>{{f.nombredeplace}}</td>
@@ -71,4 +71,3 @@
       </table>
     </div>
   </section>
-  
