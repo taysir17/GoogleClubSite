@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CondidatService } from 'src/app/lesservices/condidat.service';
 import { Form } from 'src/app/lesclasses/form';
 import { Router } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
