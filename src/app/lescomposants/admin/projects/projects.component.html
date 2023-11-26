@@ -43,7 +43,7 @@
 
     
     <div class="table-container">
-      <div class="description">
+      <div>
         <h1>liste des formations</h1>
         <button class="btn btn-light" (click)="ajouter()">Ajouter</button>
       </div>
@@ -58,13 +58,13 @@
           <th>Parametres</th>
 
         </tr>
-        <tr *ngFor="let f of lesformation">
+        <tr *ngFor="let f of lesformation;index as i">
           
           <td>{{f.titre}}</td>
           <td>{{f.datedebut|date:'dd MMMM yyyy' | uppercase}}</td>
           <td>{{f.nombredeplace}}</td>
           <td>
-            <button class="btn btn-light" (click)=" effacer(f.id)">Supprimer</button>
+            <button class="btn btn-light" (click)=" effacer(f.id,i)">Supprimer</button>
             <button class="btn btn-light" (click)="modifier(f)">Modifier</button>
           </td>
         </tr>

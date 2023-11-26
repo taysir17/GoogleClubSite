@@ -34,6 +34,7 @@ import { ListformationComponent } from './lescomposants/public/listformation/lis
 import { FormationadminComponent } from './lescomposants/admin/formationadmin/formationadmin.component';
 import { MessagesComponent } from './lescomposants/admin/messages/messages.component';
 import { MembreComponent } from './lescomposants/admin/membre/membre.component';
+import { ReponseComponent } from './lescomposants/public/reponse/reponse.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { MembreComponent } from './lescomposants/admin/membre/membre.component';
     FormationadminComponent,
     MessagesComponent,
     MembreComponent,
+    ReponseComponent,
      ],
   imports: [
     BrowserModule,

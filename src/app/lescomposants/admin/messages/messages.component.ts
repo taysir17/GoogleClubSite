@@ -12,10 +12,13 @@ export class MessagesComponent implements OnInit{
   constructor(private messageService:MessageService){}
   
   ngOnInit(): void {
-    this.messageService.getmessages().subscribe(data=>this.lesmessages=data)
+    this.messageService.getmessages('?reponse=').subscribe(data=>this.lesmessages=data)
+    
     throw new Error('Method not implemented.');
   }
-  repondre(m:Message,reponse:string){
-    this.messageService.patchmessage(m.id,{reponse:reponse}).subscribe()
+  repondre(m:Message,r:string,i:number){
+    alert("reponse envoyer")
+    this.lesmessages.splice(i,1);
+    this.messageService.patchmessage(m.id,{reponse:r}).subscribe()
   }
 }

@@ -18,13 +18,13 @@
           <th>Parametres</th>
 
         </tr>
-        <tr *ngFor="let m of lespublic">
+        <tr *ngFor="let m of lespublic;index as i">
             <td>
                 {{m.nometprenom}}
             </td>
             <td>{{m.email}}</td>
             <td>{{m.nbvisite}}</td>
-            <td><button (click)="rendreAdmin(m)">Rendre Admin</button></td>
+            <td><button (click)="rendreAdmin(m,i)">Rendre Admin</button></td>
         </tr>
         
       </table>

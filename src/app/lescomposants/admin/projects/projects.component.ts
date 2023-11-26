@@ -26,19 +26,14 @@ export class ProjectsComponent implements OnInit{
   nbformation!:number;
   nbadmin!:number;
   user!:Form;
-  getmessage(){
-    this.messageService.getmessages().subscribe(data=>this.lesmessage=data)
-  }
-  getpublic(){
-    this.condidatService.getpublic().subscribe(data=>this.lespublic=data)
-  }
+  
+  
   getFormation(){
     this.formationService.getformation("").subscribe (data=>this.lesformation=data) }
   
   ngOnInit(): void {
     this.user=this.condidatService.getuser();
-    this.getpublic()
-    this.getmessage()
+  
     this.getFormation()
     this.formationService.getformation("").subscribe(data=>this.nbformation=data.length)
     this.condidatService.getadmin().subscribe(data=>this.nbadmin=data.length)
@@ -52,8 +47,9 @@ export class ProjectsComponent implements OnInit{
     this.formationService.setf(f)
     this.router.navigate(['/admin/modifier']);
   }
-  effacer(id:string){
-    this.formationService.deleteformation(id).subscribe((data: any) => window.location.reload());
+  effacer(id:string,i:number){
+    this.formationService.deleteformation(id).subscribe();
+    this.lesformation.splice(i,1)
   }
   chercher(titre:string){
     this.c="?"
