@@ -16,7 +16,7 @@ import { ErreurComponent } from './lescomposants/erreur/erreur.component';
 import { ProjectsComponent } from './lescomposants/admin/projects/projects.component';
 import { FormulaireComponent } from './lescomposants/formulaire/formulaire.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './lescomposants/login/login.component';
 import { DepdevComponent } from './lescomposants/public/depdev/depdev.component';
 import { DepmediaComponent } from './lescomposants/public/depmedia/depmedia.component';
@@ -74,7 +74,8 @@ import { ReponseComponent } from './lescomposants/public/reponse/reponse.compone
     MatButtonModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

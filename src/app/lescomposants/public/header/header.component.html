@@ -47,11 +47,11 @@
                     <div>
                         <a routerLink="/public/reponse"><i class="fa-solid fa-bell"></i></a>
                     </div>
-                    <div class="icone-user" (click)="affiche()">
+                    <div class="icone-user" (mouseout)="affiche()">
                         <img id="profile" [src]="profile" alt="">
                     </div>
                 </div>
-                <div class="descripiton" *ngIf=divVisible>
+                <div class="descripiton" *ngIf=divVisible >
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">{{nom}}</h5>

@@ -13,29 +13,41 @@ import { FormationService } from 'src/app/lesservices/formation.service';
 export class ListformationComponent implements OnInit {
   x: Form[] = [];
   c!: string;
+  formationName!: string ;
+  minMaxChecked: boolean = false;
   constructor(private router: Router, private formationService: FormationService, private condidatService: CondidatService) { }
   lesformation: Formation[] = [];
   getFormation() {
-    this.formationService.getformation("").subscribe(data => this.lesformation = data)
+    this.formationService.getformation("").subscribe(data => this.lesformation = data);
   }
 
   ngOnInit(): void {
-    this.getFormation()
-
+    this.getFormation();
   }
 
   chercher(categorie: string, free: boolean) {
-    this.c = "?"
-    if (categorie != "")
+    this.c = "?";
+    if (categorie !== "") {
       this.c += "&titre=" + categorie;
-    if (free)
+    }
+    if (free) {
       this.c += "&prix=0";
+    }
 
-    this.formationService.getformation(this.c).subscribe(data => this.lesformation = data)
+    this.filterByMinMax(); 
 
+    this.formationService.getformation(this.c).subscribe(data => this.lesformation = data);
   }
 
-  
+  cherchername() {
+    if (this.formationName.trim() !== "") {
+      this.formationService.getformation("?titre=" + this.formationName).subscribe(data => this.lesformation = data);
+    }
+  }
 
-
+  filterByMinMax() {
+    if (this.minMaxChecked) {
+      this.c += "&minPrice=100&maxPrice=200";
+    }
+  }
 }

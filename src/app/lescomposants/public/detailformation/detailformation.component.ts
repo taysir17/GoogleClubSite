@@ -21,14 +21,16 @@ export class DetailformationComponent implements OnInit{
       this.id=this.activatedRoute.snapshot.params['id'];
      this.formationService.getformationbyid(this.id).subscribe(data=>this.f=data);
     }
-     dejasinscrir(f:Formation){
-      this.x=f.candidat;
-      return (this.x.filter(e=>e.id=this.condidatService.getuser().id).length==0)
-      
-   }
-    sinscrire(f:Formation){
-      this.x=f.candidat
-      this.x.push(this.condidatService.getuser());
-      this.formationService.patchformation(f.id,{candidat:this.x,nombredeplace:f.nombredeplace-1}).subscribe() 
-    }
+    
+   dejasinscrir(f: Formation) {
+    this.x = f.candidat;
+    return this.x.filter(e => e.id === this.condidatService.getuser().id).length === 0;
+  }
+  
+  sinscrire(f: Formation) {
+    this.x = f.candidat || [];
+    this.x.push(this.condidatService.getuser());
+    this.formationService.patchformation(f.id, { candidat: this.x, nombredeplace: f.nombredeplace - 1 }).subscribe();
+  }
+  
 }

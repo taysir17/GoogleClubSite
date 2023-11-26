@@ -7,10 +7,11 @@ export class Formation {
        public image:string,
        public nbheure:string,
        public certifie:boolean,
+       public prix:number,
        public datedebut:Date,
        public lesmodules:string,
        public domaine:string,
-       public payant:string,
+       public payant:boolean,
        public nombredeplace:number,
        public candidat:Form[]
     ){}
