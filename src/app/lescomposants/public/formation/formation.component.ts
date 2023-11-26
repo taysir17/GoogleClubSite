@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Form } from 'src/app/lesclasses/form';
 import { Formation } from 'src/app/lesclasses/formation';
@@ -10,45 +10,18 @@ import { FormationService } from 'src/app/lesservices/formation.service';
   templateUrl: './formation.component.html',
   styleUrls: ['./formation.component.css']
 })
-export class FormationComponent implements OnInit{
-  x:Form[]=[];
-  c!:string;
-  constructor(private router:Router,private formationService:FormationService,private condidatService: CondidatService) { }
-  lesformation:Formation[]=[];
-  getFormation(){
-    this.formationService.getformation("").subscribe (data=>this.lesformation=data) }
+export class FormationComponent {
+ 
   
-  ngOnInit(): void {
-    this.getFormation()
-   
-  }
-   dejasinscrir(f:Formation){
+ @Input() f!:Formation;
 
-    this.x=f.candidat;
-    
-     return (this.x.filter(e=>e.id=this.condidatService.getuser().id).length==0)
-    
+  
+ 
+   
  }
- chercher(categorie:string,free:boolean){
-  this.c="?"
-  if(categorie!="")
-    this.c+="&titre="+categorie;
-  if(free)
-    this.c+="&prix=0";
+ 
+ 
   
-  this.formationService.getformation(this.c).subscribe (data=>this.lesformation=data)
-
-  }
- 
-  sinscrire(f:Formation){
-    this.x=f.candidat
-    this.x.push(this.condidatService.getuser());
-    this.formationService.patchformation(f.id,{candidat:this.x}).subscribe()
-
-    
-   
-    
-  }
  
 
-}
+

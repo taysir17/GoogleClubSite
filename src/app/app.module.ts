@@ -29,6 +29,8 @@ import { ModifiermdpComponent } from './lescomposants/modifiermdp/modifiermdp.co
 import { FormationComponent } from './lescomposants/public/formation/formation.component';
 import { DetailformationComponent } from './lescomposants/public/detailformation/detailformation.component';
 import { PrixPipe } from './prix.pipe';
+import { NavbarComponent } from './lescomposants/admin/navbar/navbar.component';
+import { ListformationComponent } from './lescomposants/public/listformation/listformation.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,8 @@ import { PrixPipe } from './prix.pipe';
     FormationComponent,
     DetailformationComponent,
     PrixPipe,
+    NavbarComponent,
+    ListformationComponent,
      ],
   imports: [
     BrowserModule,

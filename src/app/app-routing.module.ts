@@ -23,6 +23,7 @@ import { interfaceGuard } from './interface.guard';
 
 import { DetailformationComponent } from './lescomposants/public/detailformation/detailformation.component';
 import { FormationComponent } from './lescomposants/public/formation/formation.component';
+import { ListformationComponent } from './lescomposants/public/listformation/listformation.component';
 
 
 const routes: Routes = [
@@ -59,7 +60,8 @@ const routes: Routes = [
         ]
       },
       { path: "team", title: 'team', component: TeamComponent },
-      { path: "formation", title: 'formation', component: FormationComponent },
+      { path: "lesformation", title: 'lesformation', component: ListformationComponent },
+      { path: "formation/:id", title: 'formation/:id', component: DetailformationComponent},
       {path:"detailformation",title:"detailformation",component:DetailformationComponent},
       { path: "", redirectTo: 'home', pathMatch: 'full' },
     ]
