@@ -28,4 +28,9 @@ export class ProjectsComponent implements OnInit{
   effacer(id:string){
     this.formationService.deleteformation(id).subscribe((data: any) => window.location.reload());
   }
+  visible: boolean = false;
+
+  affiche() {
+    this.visible = !this.visible;
+  }
 }

@@ -41,6 +41,15 @@
       "photo": "https://www.zooplus.be/magazine/wp-content/uploads/2019/06/comprendre-le-langage-des-chats.jpg",
       "role": "public",
       "id": "PE35dkY"
+    },
+    {
+      "nometprenom": "jhondolé",
+      "email": "exemple@gmail.com",
+      "phone": 123488999,
+      "password": "jdhqsdqj@12",
+      "photo": "https://www.aquaportail.com/pictures2307/chat-domestique-europeen.jpg",
+      "role": "public",
+      "id": "GwCE2UE"
     }
   ],
   "formation": [

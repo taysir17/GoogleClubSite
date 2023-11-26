@@ -10,8 +10,9 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: 5% auto;
+    margin-top: 150px;
     max-width: 600px;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .text-primary {
@@ -63,3 +64,12 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+.error {
+    border: 1px solid red;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
