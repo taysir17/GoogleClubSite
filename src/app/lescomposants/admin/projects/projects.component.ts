@@ -23,6 +23,8 @@ export class ProjectsComponent implements OnInit{
   lesformation:Formation[]=[];
   lespublic:Form[]=[]
   lesmessage:Message[]=[]
+  nbformation!:number;
+  nbadmin!:number;
   user!:Form;
   getmessage(){
     this.messageService.getmessages().subscribe(data=>this.lesmessage=data)
@@ -38,6 +40,9 @@ export class ProjectsComponent implements OnInit{
     this.getpublic()
     this.getmessage()
     this.getFormation()
+    this.formationService.getformation("").subscribe(data=>this.nbformation=data.length)
+    this.condidatService.getadmin().subscribe(data=>this.nbadmin=data.length)
+    
     throw new Error('Method not implemented.');
   }
   ajouter(){

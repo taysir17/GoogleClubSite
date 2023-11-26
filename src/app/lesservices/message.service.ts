@@ -15,4 +15,7 @@ export class MessageService {
   getmessages():Observable<Message[]>{
     return this.http.get<Message[]>(URL);
     }
+  patchmessage(id:string, data:any):Observable<Message>{
+    return this.http.patch<Message>(URL+"/"+ id, data);
+    }
 }

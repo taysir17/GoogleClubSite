@@ -28,6 +28,9 @@ export class CondidatService {
   getpublic():Observable<Form[]> {
     return this.http.get<Form[]>(URL+"?role=public");
   }
+  getadmin():Observable<Form[]> {
+    return this.http.get<Form[]>(URL+"?role=admin");
+  }
   getcondidat(): Observable<Form[]> {
     return this.http.get<Form[]>(URL);
   }

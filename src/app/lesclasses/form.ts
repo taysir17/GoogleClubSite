@@ -7,6 +7,5 @@ export class Form {
         public phone:number,
         public password:string,
         public role:string,
-        
     ){}
 }

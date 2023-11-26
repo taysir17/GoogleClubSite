@@ -24,6 +24,9 @@ import { interfaceGuard } from './interface.guard';
 import { DetailformationComponent } from './lescomposants/public/detailformation/detailformation.component';
 import { FormationComponent } from './lescomposants/public/formation/formation.component';
 import { ListformationComponent } from './lescomposants/public/listformation/listformation.component';
+import { MembreComponent } from './lescomposants/admin/membre/membre.component';
+import { MessageService } from './lesservices/message.service';
+import { MessagesComponent } from './lescomposants/admin/messages/messages.component';
 
 
 const routes: Routes = [
@@ -37,10 +40,12 @@ const routes: Routes = [
   {
     path: "admin", title: 'admin', component: DashboardadminComponent, canActivate: [adminGuard], children: [
       { path: "modifiermdp", title: 'modifiermdp', component: ModifiermdpComponent },
-      { path: "project", title: 'project', component: ProjectsComponent },
+      { path: "formations", title: 'formations', component: ProjectsComponent },
+      { path: "membres", title: 'membres', component: MembreComponent },
+      { path: "messages", title: 'messages', component: MessagesComponent },
       { path: "modifier", title: 'modifier', component: ModifierComponent },
       { path: "ajouter", title: 'ajouter', component: AjoutformationComponent },
-      { path: "", redirectTo: 'project', pathMatch: 'full' },
+      { path: "", redirectTo: 'formations', pathMatch: 'full' },
     ]
   },
   {

@@ -1,0 +1,118 @@
+.contenu {
+    background-color: #cFE8FF;
+    padding: 5px;
+    margin-left: 250px;
+    margin-top: 10px;
+   
+  }
+
+  
+  
+  
+  .table-container {
+    background-color: white;
+    padding: 20px; 
+    margin-top: 80px;
+    margin-left:30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 1000px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  .nav > div:last-child {
+    margin-top: auto;
+  margin-bottom: -20px;
+  
+
+  }
+  .message-container {
+      display: flex;
+      align-items: center;
+      width: 700px;
+      height: auto;
+      margin: 50px;
+      padding: 20px;
+      background-color: #bbb;
+      justify-content: space-around;
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .text-container {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .btn-light {
+  background-color: #336699;
+  color: white;
+  border: 1px solid #336699;
+}
+
+.btn-light:hover {
+  background-color: #204b6e;
+  border: 1px solid #204b6e;
+  color: white;
+}
+.description{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.box-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 24px;
+    margin-top: 36px;
+    display: flex;
+    
+  }
+   .box-info li{
+    padding: 24px;
+    background: #F9F9F9;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    flex-direction: column; 
+  text-align: center;
+  width: 320px;
+    grid-gap: 24px;
+  }
+   .box-info li .bx{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   .box-info li:nth-child(1) .bx{
+    background:#ADD8E6;
+    color:#3C91E6;
+  }
+   .box-info li:nth-child(2) .bx{
+    background:#FFF2C6;
+    color:#FFCE26;
+  }
+   .box-info li:nth-child(3) .bx{
+    background:#FFE0D3;
+    color:#FD7238,
+  }

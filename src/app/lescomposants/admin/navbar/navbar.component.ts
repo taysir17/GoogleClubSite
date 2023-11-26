@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Form } from 'src/app/lesclasses/form';
 import { CondidatService } from 'src/app/lesservices/condidat.service';
+import { FormationService } from 'src/app/lesservices/formation.service';
 
 @Component({
   selector: 'app-navbar',
@@ -12,11 +13,13 @@ export class NavbarComponent implements OnInit{
   nom!:string;
   profile!:string;
   user!:Form;
-  constructor(private router:Router,private condidatService: CondidatService) { }
+
+  constructor(private router:Router,private condidatService: CondidatService,private formationService:FormationService) { }
   ngOnInit(): void {
     this.user=this.condidatService.getuser();
     this.nom=this.user.nometprenom;
     this.profile=this.user.photo;
+
   }
 
   logout(){
