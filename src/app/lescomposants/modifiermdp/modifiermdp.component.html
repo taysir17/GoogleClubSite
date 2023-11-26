@@ -12,24 +12,25 @@
 
 <div class="container-fluid">
     <div class="contact-detail position-relative">
-        <h1>Modifier formation</h1>
+        <h1>Modifier mot de passe</h1>
         <div class="contact-form">
             <form action="" [formGroup]="changer" (ngSubmit)="onSubmitForm() ">
             <div>
-                <label for="titre">email</label>
+                <label for="titre">Email</label>
                 <input type="text" id="titre"  formControlName="email" readonly>
             </div>
             <div>
-                <label for="image">ancien mot de passe</label>
+                <label for="image">Ancien mot de passe</label>
                 <input type="password" id="image"  formControlName="mdp">
             </div>
             <div>
-                <label for="nbheure">nouveau mot de passe </label>
+                <label for="nbheure">Nouveau mot de passe </label>
                 <input type="password" id="nbheure" formControlName="nmdp" >
             </div>
             
             <div>
-                <button >modifier</button>
+                <button>Modifier</button>
+                <div *ngIf="error" class="alert alert-danger">Mot de passe ancien incorrect</div>
             </div>
         </form>
         </div>

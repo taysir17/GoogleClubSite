@@ -26,37 +26,44 @@
       "role": "public",
       "img": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
       "id": "NGVq0YB"
+    },
+    {
+      "nometprenom": "aziz",
+      "email": "aziz@gmail.com",
+      "phone": "12345678",
+      "password": "12345678",
+      "photo": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
+      "role": "public",
+      "nbvisite": 0,
+      "id": "ayUynkD"
+    },
+    {
+      "nometprenom": "aziz",
+      "email": "aziz1@gmail.com",
+      "phone": "12345678",
+      "password": "12345678",
+      "photo": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
+      "role": "public",
+      "nbvisite": 0,
+      "id": "8hq5efW"
     }
-    
-   
   ],
   "formation": [
-    {
-      "titre": "Developement",
-      "image": "https://www.theforage.com/blog/wp-content/uploads/2022/12/what-is-cybersecurity.jpg",
-      "nbheure": 23,
-      "certifie": false,
-      "datedebut": "2222-02-12",
-      "prix": 0,
-      "id": 4,
-      "nombredeplace": 20,
-      "les modules": "angular,springboot",
-      "Payant":"non",
-      "candidat": []
-    },
     {
       "titre": "Cyber Sécurité",
       "image": "https://as1.ftcdn.net/v2/jpg/05/87/30/02/1000_F_587300228_IcAeKZu4oDwH4YrGt2hExS42Srt95qmc.jpg",
       "nbheure": 64,
       "certifie": true,
-      "datedebut": "2023-02-12",     
-       "id": 5,
-       "prix":250,
-      "nombredeplace": 10,
+      "datedebut": "2023-02-12",
+      "id": 5,
+      "prix": 250,
+      "nombredeplace": 9,
       "les modules": "notions de bases,Gestion et organisation de la cybersécurité",
-      "domaine":"IT",
-      "Payant":"oui",
-      "candidat": []
+      "domaine": "IT",
+      "Payant": "oui",
+      "candidat": [
+        null
+      ]
     },
     {
       "titre": "node js",
@@ -66,14 +73,30 @@
       "datedebut": "2024-02-9",
       "prix": 80,
       "id": 6,
-      "nombredeplace": 10,
-      "Payant":"oui",
+      "nombredeplace": 9,
+      "Payant": "oui",
       "les modules": "sql/no sqp,cloud:Aws",
-      "candidat": []
+      "candidat": [
+        null,
+        null,
+        null
+      ]
     }
   ],
   "messages": [
-    
-    
+    {
+      "msg": "heloo",
+      "user": {
+        "nometprenom": "ilyes bouraoui",
+        "email": "ilyes@gmail.com",
+        "phone": 32488999,
+        "password": "ilyes",
+        "role": "public",
+        "img": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
+        "id": "NGVq0YB"
+      },
+      "reponse": "byyy",
+      "id": 1
+    }
   ]
 }
