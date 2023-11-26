@@ -62,66 +62,7 @@
       "prix": 0,
       "id": 4,
       "les languages": "angular,springboot",
-      "candidat": [
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        },
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        },
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        },
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        },
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        }
-      ]
-    },
-    {
-      "titre": "bmaziz",
-      "image": "assets/img/login.jpg",
-      "nbheure": 50,
-      "certifie": true,
-      "datedebut": "2023-11-17",
-      "candidat": [
-        {
-          "nometprenom": "aziz",
-          "email": "aziz@gmail.com",
-          "phone": 123488999,
-          "password": "azizbm2003",
-          "role": "public",
-          "id": "1LWCh-Z"
-        }
-      ],
-      "id": 5
+      "candidat": []
     }
   ],
   "messages": [
