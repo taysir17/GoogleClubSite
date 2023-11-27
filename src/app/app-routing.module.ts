@@ -50,7 +50,7 @@ const routes: Routes = [
     ]
   },
   {
-        path: "public", title: 'public', component: DashboardpublicComponent, 
+        path: "public", title: 'public', component: DashboardpublicComponent, canActivate: [publicGuard], 
         children: [
             { path: "modifiermdp", title: 'modifiermdp', component: ModifiermdpComponent },
             { path: "reponse", title: 'reponse', component: ReponseComponent },
