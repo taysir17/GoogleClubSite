@@ -58,7 +58,7 @@
       "prix": 0,
       "id": 4,
       "nombredeplace": 18,
-      "les modules": "angular,springboot",
+      "lesmodules": "angular,springboot",
       "Payant": false,
       "candidat": [
         {
@@ -82,7 +82,7 @@
       "id": 5,
       "prix": 250,
       "nombredeplace": 9,
-      "les modules": "notions de bases,Gestion et organisation de la cybersécurité",
+      "lesmodules": "notions de bases,Gestion et organisation de la cybersécurité",
       "domaine": "IT",
       "Payant": true,
       "candidat": []
@@ -96,7 +96,7 @@
       "id": 9,
       "prix": 0,
       "nombredeplace": 10,
-      "les modules": "Le temps et la valeur de l'argent,La gestion financière",
+      "lesmodules": "Le temps et la valeur de l'argent,La gestion financière",
       "domaine": "MGT",
       "Payant": false,
       "candidat": [
@@ -139,6 +139,20 @@
       },
       "reponse": "byyy",
       "id": 1
+    },
+    {
+      "msg": "hekaedjnkdjs",
+      "user": {
+        "nometprenom": "ilyes bouraoui",
+        "email": "ilyes@gmail.com",
+        "phone": 32488999,
+        "password": "ilyes",
+        "role": "public",
+        "img": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
+        "id": "NGVq0YB"
+      },
+      "reponse": "",
+      "id": 2
     }
   ]
 }

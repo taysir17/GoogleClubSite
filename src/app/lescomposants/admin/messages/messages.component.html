@@ -1,14 +1,16 @@
 <section class="contenu">
     <div class="table-container">
         <div class="description">
-          <h1>liste des messages</h1>
+          <h1>Liste Des Messages</h1>
         </div>
         <div *ngFor="let m of lesmessages;index as i">
            
         
-            <h2>{{m.user.id}}</h2>
-            <p>{{m.msg}}</p>
-            <textarea #r>{{m.reponse}}</textarea><button (click)="repondre(m,r.value,i)">repondre</button>
+            <h2>{{m.user.nometprenom|uppercase}}</h2>
+            <div>
+              <p>{{m.msg}}</p>
+            </div>
+            <textarea #r>{{m.reponse}}</textarea><button (click)="repondre(m,r.value,i)">Repondre</button>
           </div>
   
             

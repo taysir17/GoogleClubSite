@@ -5,10 +5,6 @@
     margin-top: 10px;
    
   }
-
-  
-  
-  
   .table-container {
     background-color: white;
     padding: 20px; 
@@ -115,4 +111,21 @@
    .box-info li:nth-child(3) .bx{
     background:#FFE0D3;
     color:#FD7238,
+  }
+  img{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+  }
+  #title{
+    display: flex;
+    justify-content: space-between;
+  }
+  #descripiton{
+    display: flex;
+    justify-content: space-between;
+  }
+  #button{
+    display: flex;
+    justify-content: space-between;
   }

@@ -5,7 +5,7 @@
     
     <div class="table-container">
       <div class="description">
-        <h1>liste des membres</h1>
+        <h1>Liste Des Membres</h1>
       </div>
 
 
@@ -20,7 +20,11 @@
         </tr>
         <tr *ngFor="let m of lespublic;index as i">
             <td>
+              <div id="profile">
+                <img src="{{m.photo}}" alt="">
                 {{m.nometprenom}}
+              </div>
+                
             </td>
             <td>{{m.email}}</td>
             <td>{{m.nbvisite}}</td>

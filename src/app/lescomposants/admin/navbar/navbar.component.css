@@ -23,6 +23,7 @@ body{
       display: flex;
       align-items: center;
       color: #3C91E6;
+      padding-left: 60px;
     }
     #sidebar .brand .bx{
       min-width: 60px;

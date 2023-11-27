@@ -13,9 +13,9 @@
     <img [src]="f.image" alt="Formation Image">
     <p><span>Nombre d'heures:</span> {{ f.nbheure }}</p>
     <p><span>Date de début:</span> {{ f.datedebut | date: 'dd/MM/yyyy' }}</p>
-    <p><span>Les modules:</span>{{ f.lesmodules }}</p>
+    <p><span>Les modules:</span>{{f.lesmodules}}</p>
     <p [ngClass]="{'payant-oui': f.payant, 'payant-non': !f.payant}">
-      <span>Payant:</span> {{ f.payant ? f.prix  : 'gratuit' }}
+      <span>Payant:</span> {{ f.payant ? 'hjsh'  : 'gratuit' }}
     </p>
     <p [ngClass]="{'certifie-oui': f.certifie, 'certifie-non': !f.certifie}">
       <span>Certifié:</span> {{ f.certifie ? 'Oui' : 'Non' }}

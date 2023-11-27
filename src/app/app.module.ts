@@ -31,7 +31,6 @@ import { DetailformationComponent } from './lescomposants/public/detailformation
 import { PrixPipe } from './prix.pipe';
 import { NavbarComponent } from './lescomposants/admin/navbar/navbar.component';
 import { ListformationComponent } from './lescomposants/public/listformation/listformation.component';
-import { FormationadminComponent } from './lescomposants/admin/formationadmin/formationadmin.component';
 import { MessagesComponent } from './lescomposants/admin/messages/messages.component';
 import { MembreComponent } from './lescomposants/admin/membre/membre.component';
 import { ReponseComponent } from './lescomposants/public/reponse/reponse.component';
@@ -63,7 +62,6 @@ import { ReponseComponent } from './lescomposants/public/reponse/reponse.compone
     PrixPipe,
     NavbarComponent,
     ListformationComponent,
-    FormationadminComponent,
     MessagesComponent,
     MembreComponent,
     ReponseComponent,
