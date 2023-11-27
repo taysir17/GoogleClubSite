@@ -13,7 +13,7 @@ import { FormationService } from 'src/app/lesservices/formation.service';
 export class ListformationComponent implements OnInit {
   x: Form[] = [];
   c!: string;
-  formationName!: string;
+  formationName: string="" ;
   minMaxChecked: boolean = false;
   selectedDomains: { [key: string]: boolean } = {};
 
@@ -29,24 +29,24 @@ export class ListformationComponent implements OnInit {
     this.getFormation();
   }
 
-  chercher(categorie: string, free: boolean) {
+  chercher(domaine: string, free: boolean) {
     this.c = "?";
-    if (categorie !== "") {
-      this.c += "&titre=" + categorie;
+    if (domaine!== "tous") {
+      this.c += "&domaine=" +domaine;
     }
     if (free) {
-      this.c += "&prix=0";
+      this.c += "&Payant=false";
     }
+
 
    
 
-    this.formationService.getformation(this.c).subscribe(data => this.lesformation = data);
+    this.formationService.getformation(this.c).subscribe(data => {this.lesformation = data;
+      this.lesformation=this.lesformation.filter(e=>e.titre.startsWith(this.formationName))
+    });
   }
 
-  cherchername() {
-    if (this.formationName.trim() !== "") {
-      this.formationService.getformation("?titre=" + this.formationName).subscribe(data => this.lesformation = data);
-    }
-  }
+  
 
+ 
 }

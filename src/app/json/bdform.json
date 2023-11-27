@@ -7,7 +7,9 @@
       "password": "aziz@123",
       "img": "aziz.jpg",
       "role": "admin",
-      "id": "4WiW_nv"
+      "id": "4WiW_nv",
+      "nbvesite": null,
+      "nbvisite": 3
     },
     {
       "nometprenom": "taissirbouzidi",
@@ -25,7 +27,8 @@
       "password": "ilyes",
       "role": "public",
       "img": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
-      "id": "NGVq0YB"
+      "id": "NGVq0YB",
+      "nbvisite": 11
     },
     {
       "nometprenom": "aziz",
@@ -70,6 +73,15 @@
           "role": "public",
           "nbvisite": 0,
           "id": "ayUynkD"
+        },
+        {
+          "nometprenom": "ilyes bouraoui",
+          "email": "ilyes@gmail.com",
+          "phone": 32488999,
+          "password": "ilyes",
+          "role": "public",
+          "img": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
+          "id": "NGVq0YB"
         }
       ]
     },

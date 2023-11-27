@@ -39,8 +39,9 @@
     </ul>
 
     <div class="table-container">
-      <div id="title">
-        <h1>Liste Des Formations</h1>
+      <div>
+        <h1>liste des formations</h1>
+        <input type="text" placeholder="name" [(ngModel)]="formationName"  class="form-control" (input)="chercher()" #nom>
         <button class="btn btn-light" (click)="ajouter()">Ajouter</button>
       </div>
 
