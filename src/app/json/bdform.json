@@ -26,9 +26,27 @@
       "role": "public",
       "img": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
       "id": "NGVq0YB"
+    },
+    {
+      "nometprenom": "aziz",
+      "email": "aziz@gmail.com",
+      "phone": "12345678",
+      "password": "12345678",
+      "photo": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
+      "role": "public",
+      "nbvisite": 0,
+      "id": "ayUynkD"
+    },
+    {
+      "nometprenom": "aziz",
+      "email": "aziz1@gmail.com",
+      "phone": "12345678",
+      "password": "12345678",
+      "photo": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
+      "role": "public",
+      "nbvisite": 0,
+      "id": "8hq5efW"
     }
-    
-   
   ],
   "formation": [
     {
@@ -39,23 +57,34 @@
       "datedebut": "2222-02-12",
       "prix": 0,
       "id": 4,
-      "nombredeplace": 20,
+      "nombredeplace": 18,
       "les modules": "angular,springboot",
-      "Payant":false,
-      "candidat": []
+      "Payant": false,
+      "candidat": [
+        {
+          "nometprenom": "aziz",
+          "email": "aziz@gmail.com",
+          "phone": "12345678",
+          "password": "12345678",
+          "photo": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
+          "role": "public",
+          "nbvisite": 0,
+          "id": "ayUynkD"
+        }
+      ]
     },
     {
       "titre": "Cyber Sécurité",
       "image": "https://as1.ftcdn.net/v2/jpg/05/87/30/02/1000_F_587300228_IcAeKZu4oDwH4YrGt2hExS42Srt95qmc.jpg",
       "nbheure": 64,
       "certifie": true,
-      "datedebut": "2023-02-12",     
-       "id": 5,
-       "prix":250,
-      "nombredeplace": 10,
+      "datedebut": "2023-02-12",
+      "id": 5,
+      "prix": 250,
+      "nombredeplace": 9,
       "les modules": "notions de bases,Gestion et organisation de la cybersécurité",
-      "domaine":"IT",
-      "Payant":true,
+      "domaine": "IT",
+      "Payant": true,
       "candidat": []
     },
     {
@@ -63,14 +92,24 @@
       "image": "https://www.emlv.fr/wordpress/wp-content/uploads/2018/11/shutterstock_750073606-650x380.jpg",
       "nbheure": 10,
       "certifie": true,
-      "datedebut": "2023-02-12",     
-       "id": 9,
-       "prix":0,
+      "datedebut": "2023-02-12",
+      "id": 9,
+      "prix": 0,
       "nombredeplace": 10,
       "les modules": "Le temps et la valeur de l'argent,La gestion financière",
-      "domaine":"MGT",
-      "Payant":false,
-      "candidat": []
+      "domaine": "MGT",
+      "Payant": false,
+      "candidat": [
+        {
+          "nometprenom": "ilyes bouraoui",
+          "email": "ilyes@gmail.com",
+          "phone": 32488999,
+          "password": "ilyes",
+          "role": "public",
+          "img": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
+          "id": "NGVq0YB"
+        }
+      ]
     },
     {
       "titre": "node js",
@@ -81,13 +120,25 @@
       "prix": 80,
       "id": 6,
       "nombredeplace": 10,
-      "Payant":true,
+      "Payant": true,
       "les modules": "sql/no sqp,cloud:Aws",
       "candidat": []
     }
   ],
   "messages": [
-    
-    
+    {
+      "msg": "heloo",
+      "user": {
+        "nometprenom": "ilyes bouraoui",
+        "email": "ilyes@gmail.com",
+        "phone": 32488999,
+        "password": "ilyes",
+        "role": "public",
+        "img": "https://www.aquaportail.com/pictures1712/chien-golden-retriever-male.jpg",
+        "id": "NGVq0YB"
+      },
+      "reponse": "byyy",
+      "id": 1
+    }
   ]
 }

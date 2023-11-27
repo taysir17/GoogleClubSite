@@ -16,7 +16,7 @@
       <section id="sidebar">
         <a href="" class="brand">
           <img [src]="profile" alt="">          
-          <span class="text">{{nom}}</span>
+          <span class="text " >{{nom}}</span>
         </a>
         <ul class="side-menu top">
           <li >
@@ -45,13 +45,13 @@
           <li>
             <a routerLink="/admin/modifiermdp">
               <i class='bx bxs-cog'></i>
-              <span class="text">changer mot de passe</span>
+              <span class="text">Changer mot de passe</span>
             </a>
           </li>
           <li>
             <a (click)="logout()" class="logout">
               <i class='bx bxs-log-out-circle'></i>
-              <span class="text">deconnexion</span>
+              <span class="text">Déconnexion</span>
             </a>
           </li>
         </ul>

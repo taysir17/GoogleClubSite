@@ -5,19 +5,19 @@
             <h5 class="text-primary">Get In Touch</h5>
             <h1 class="mb-3">Contact for any query</h1>
         </div>
-
-        <!-- Contact details -->
-        <div class="contact-detail position-relative p-5">
-            <div class="row g-5 mb-5 justify-content-center">
-                <!-- Address -->
-                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                    <div class="d-flex bg-light p-3 rounded contact-info">
-                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                            <i class="fas fa-map-marker-alt text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h4 class="text-primary">Address</h4>
-                            <a href="#" class="h5 text-dark">47, Rue des Entrepreneurs Charguia II - 2035 Tunisie</a>
+        <div class="contact-detail position-relative p-5" style="height: 1000px;">
+            <div class="row g-5 mb-5 justify-content-center" >
+                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s" >
+                    <div class="d-flex bg-light p-3 rounded contact-info" >
+                        <div>
+                            <!-- contact.component.html -->
+                            <div class="ms-3" >
+                                <h4 class="text-primary">
+                                    <i class="fas fa-map-marker-alt "></i>
+                                    Address</h4>
+                                <!--<iframe class="map mt-0"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.6686750417102!2d10.110030914474098!3d36.8024935799481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd33d767779ff5%3A0xd05e651a77c912a!2sMasterClass!5e0!3m2!1sfr!2stn!4v1642666800089!5m2!1sfr!2stn" allowfullscreen="" loading="lazy"></iframe>-->
+                                <a href="https://www.bing.com/maps?q=ISET+Charguia&satid=id.sid%3A0b962980-57c4-0163-3f7c-6215838eda7f&FORM=KC2MAP&cp=36.840329~10.214981&lvl=12.0" class="h5 text-dark">47, Rue des Entrepreneurs Charguia II - 2035 Tunisie</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -25,11 +25,11 @@
                 <!-- Phone -->
                 <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
                     <div class="d-flex bg-light p-3 rounded contact-info">
-                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                            <i class="fa fa-phone text-white"></i>
-                        </div>
+                       
                         <div class="ms-3">
-                            <h4 class="text-primary">Call Us</h4>
+                            <h4 class="text-primary">                           
+                                 <i class="fa fa-phone"></i>
+                                Call Us</h4>
                             <a class="h5 text-dark" href="tel:+0123456789" target="_blank">+216 95514521</a>
                         </div>
                     </div>
@@ -38,35 +38,29 @@
                 <!-- Email -->
                 <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
                     <div class="d-flex bg-light p-3 rounded contact-info">
-                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                            <i class="fa fa-envelope text-white"></i>
-                        </div>
+                        
                         <div class="ms-3">
-                            <h4 class="text-primary">Email Us</h4>
-                            <p class="h5 text-dark">contact.isetchggl</p>
-                            <p class="h5 text-dark">@gmail.com</p>
+                            <h4 class="text-primary">
+                                <i class="fa fa-envelope "></i>Email Us</h4>
+      
+                            <a class="h5 text-dark"href="mailto:contact.isetchggl@gmail.com">contact.isetchggl@gmail.com</a>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="col  wow fadeIn" data-wow-delay=".7s">
+                    <form action="" [formGroup]="message" (ngSubmit)="onSubmit() ">
 
-            <!-- Contact form -->
-            <div class="container-fluid py-5 mb-5">
-                <div class="row g-5 justify-content-center">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                        <div class="p-5 rounded contact-form">
-                            <form action="" [formGroup]="message" (ngSubmit)="onSubmit()">
-                                <div class="mb-4">
-                                    <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Message" formControlName="msg"></textarea>
-                                </div>
-                                <div class="text-start">
-                                    <button class="btn bg-primary text-white py-3 px-5" type="submit" [disabled]="message.invalid">Send Message</button>
-                                </div>
-                            </form>
+                        <div class="mb-4">
+                            <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10"
+                                placeholder="Message" formControlName="msg"></textarea>
                         </div>
-                    </div>
+                        <div class="text-start">
+                            <button class="btn bg-primary text-white py-3 px-5" type="submit" [disabled]="message.invalid">Send
+                                Message</button>
+                        </div>
+                    </form>
                 </div>
-            </div>
+            </div>    
         </div>
     </div>
 </div>

@@ -38,7 +38,6 @@ export class ProjectsComponent implements OnInit{
     this.formationService.getformation("").subscribe(data=>this.nbformation=data.length)
     this.condidatService.getadmin().subscribe(data=>this.nbadmin=data.length)
     
-    throw new Error('Method not implemented.');
   }
   ajouter(){
     this.router.navigate(['/admin/ajouter']);

@@ -16,11 +16,11 @@ export class FormulaireComponent implements OnInit {
 
   ngOnInit(): void {
     this.personne = this.formBuilder.group({
-      nometprenom: ['jhondolé',[Validators.required]],
-      email: ['exemple@gmail.com',[Validators.required, Validators.email]],
-      phone: [123488999, [Validators.required, Validators.pattern(/^\d{8}$/)]],
-      password:["jdhqsdqj@12", [Validators.required, Validators.minLength(8)]],
-      photo:["https://www.aquaportail.com/pictures2307/chat-domestique-europeen.jpg", Validators.required],
+      nometprenom: ['',[Validators.required]],
+      email: ['',[Validators.required, Validators.email]],
+      phone: [, [Validators.required, Validators.pattern(/^\d{8}$/)]],
+      password:['', [Validators.required, Validators.minLength(8)]],
+      photo:['', Validators.required],
       role:["public"],
       nbvisite:[0],
     
@@ -51,10 +51,14 @@ export class FormulaireComponent implements OnInit {
     
 
   ajouter() {
-    this.condidatService.addcondidat(this.personne.value).subscribe((data: any) => this.router.navigate(['/congratulation']));
+    this.condidatService.addcondidat(this.personne.value).subscribe(
+      (data: any) => 
+      {
+        console.log('candidat',this.personne.value);
+        this.router.navigate(['/interface']);
+        
+      });
   }
-  login(){
-    this.router.navigate(["/public/home"])
-  }
+ 
   
 }

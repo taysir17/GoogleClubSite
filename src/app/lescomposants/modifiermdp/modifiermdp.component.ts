@@ -14,6 +14,7 @@ import { FormationService } from 'src/app/lesservices/formation.service';
 export class ModifiermdpComponent implements OnInit{
   changer!: FormGroup;
   user!:Form;
+  error:boolean=false;
   
   constructor(private router:Router,private condidatService:CondidatService,private formBuilder: FormBuilder) { }
   ngOnInit(): void {
@@ -32,7 +33,17 @@ export class ModifiermdpComponent implements OnInit{
   onSubmitForm() {
     if(this.changer.value["mdp"]==this.user.password){
       this.condidatService.patchcondidat(this.user.id,{password:this.changer.value["nmdp"]}).subscribe()
-      this.router.navigate( ['../'] )
+      if (this.user.role=='admin')
+      this.router.navigate( ['/admin'] )
+      else
+      this.router.navigate( ['/public'] )
+
+
+    }
+    else
+    {
+      this.error=true;
+      console.log('erorrr',this.error)
     }
   }
   
