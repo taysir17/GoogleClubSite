@@ -1,6 +1,23 @@
-<div *ngFor="let m of lesmessages">
-    <h2>Question</h2>
-    <p>{{m.msg}}</p>
-    <h2>reponse</h2>
-    <p>{{m.reponse}}</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+
+<body>
+    <h1>Mes messages</h1>
+    <div class="message-cards-container">
+        <div *ngFor="let m of lesmessages" class="message-card">
+            <h2>Question</h2>
+            <p>{{m.msg}}</p>
+            <h2>Réponse</h2>
+            <p>{{m.reponse}}</p>
+        </div>
+    </div>
+</body>
+
+</html>

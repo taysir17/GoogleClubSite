@@ -18,7 +18,6 @@ import { FormulaireComponent } from './lescomposants/formulaire/formulaire.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './lescomposants/login/login.component';
-import { DepdevComponent } from './lescomposants/public/depdev/depdev.component';
 import { DepmediaComponent } from './lescomposants/public/depmedia/depmedia.component';
 import { InterfaceComponent } from './lescomposants/interface/interface.component';
 import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/ajoutformation.component';
@@ -52,7 +51,6 @@ import { ReponseComponent } from './lescomposants/public/reponse/reponse.compone
     FormulaireComponent,
     
     LoginComponent,
-    DepdevComponent,
     DepmediaComponent,
     DashboardpublicComponent,
     DashboardadminComponent,

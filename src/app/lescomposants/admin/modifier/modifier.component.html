@@ -39,7 +39,7 @@
                 </div>
                 <div>
                     <label for="Payant">Payant</label>
-                    <input type="checkbox" id="Payant" formControlName="Payant">
+                    <input type="checkbox" id="Payant" formControlName="payant">
                     </div>
                 
                 
@@ -49,6 +49,8 @@
                 </div>
                 <div>
                     <button type="submit">Ajouter</button>
+                    <button type="button" (click)="formation.reset()" >Effacer</button>
+
                 </div>
             </form>
         </div>

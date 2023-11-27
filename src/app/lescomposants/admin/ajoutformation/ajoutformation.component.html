@@ -15,16 +15,24 @@
                 <h1>Ajouter formation</h1>
                 <div>
                     <label for="titre">Titre</label>
-                    <input type="text" id="titre" formControlName="titre">
+                    <input type="text" id="titre" formControlName="titre" [ngClass]="{'error': titre?.invalid && titre?.touched}">
                 </div>
+                <div *ngIf="titre?.errors?.['pattern'] && titre?.dirty" class="error-message">le champ n'est pas valide.</div>
+                    <div *ngIf="titre?.errors?.['required'] && titre?.touched "class="error-message">le champ est obligatoire</div>           
+
                 <div>
                     <label for="image">Lien d' Image</label>
                     <input type="text" id="image" formControlName="image">
                 </div>
+                <div *ngIf="image?.errors?.['required'] && image?.touched "class="error-message">le champ est obligatoire</div>
                 <div>
                     <label for="nbheure">Nombre d' heure</label>
                     <input type="number" id="nbheure" formControlName="nbheure">
                 </div>
+                <div *ngIf="nbheure?.errors?.['min'] && nbheure?.dirty"class="error-message">le champ n'est pas valid</div>
+                <div *ngIf="nbheure?.errors?.['required'] && nbheure?.touched "class="error-message">le champ est obligatoire</div>
+
+
                 <div>
                     <label for="certifie">Certifie</label>
                     <input type="checkbox" id="certifie" formControlName="certifie">
@@ -37,6 +45,7 @@
                     <label >Les modules</label>
                     <input type="text" id="" formControlName="lesmodules">
                 </div>
+                <div *ngIf="lesmodules?.errors?.['required'] && lesmodules?.touched "class="error-message">le champ est obligatoire</div>
                 <div>
                     <label for="Payant">Payant</label>
                     <input type="checkbox" id="Payant" formControlName="Payant">
@@ -49,6 +58,7 @@
                 </div>
                 <div>
                     <button type="submit">Ajouter</button>
+                    <button type="button" (click)="formation.reset()" >Effacer</button>
                 </div>
             </form>
         </div>

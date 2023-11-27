@@ -16,7 +16,7 @@ export class FormulaireComponent implements OnInit {
 
   ngOnInit(): void {
     this.personne = this.formBuilder.group({
-      nometprenom: ['',[Validators.required]],
+      nometprenom: ['',[Validators.required,Validators.pattern("^([A-Z][a-z]+)( [A-Z][a-z]+)+$")]],
       email: ['',[Validators.required, Validators.email]],
       phone: [, [Validators.required, Validators.pattern(/^\d{8}$/)]],
       password:['', [Validators.required, Validators.minLength(8)]],

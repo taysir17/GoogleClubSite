@@ -4,8 +4,6 @@
           <h1>Liste Des Messages</h1>
         </div>
         <div *ngFor="let m of lesmessages;index as i">
-           
-        
             <h2>{{m.user.nometprenom|uppercase}}</h2>
             <div>
               <p>{{m.msg}}</p>

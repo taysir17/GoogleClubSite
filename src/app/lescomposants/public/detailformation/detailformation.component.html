@@ -14,13 +14,19 @@
     <p><span>Nombre d'heures:</span> {{ f.nbheure }}</p>
     <p><span>Date de début:</span> {{ f.datedebut | date: 'dd/MM/yyyy' }}</p>
     <p><span>Les modules:</span>{{f.lesmodules}}</p>
-    <p [ngClass]="{'payant-oui': f.payant, 'payant-non': !f.payant}">
-      <span>Payant:</span> {{ f.payant ? 'hjsh'  : 'gratuit' }}
+    <p [ngClass]="{'payant-oui': f.Payant, 'payant-non': !f.Payant}">
+      <span>Payant:</span> {{ f.prix| prix }}
     </p>
     <p [ngClass]="{'certifie-oui': f.certifie, 'certifie-non': !f.certifie}">
       <span>Certifié:</span> {{ f.certifie ? 'Oui' : 'Non' }}
     </p>
-    <button (click)="sinscrire(f)" *ngIf="dejasinscrir(f)">S'inscrire</button><br>
+    <div *ngIf="!dejasinscrir(f)">
+        <p>Vous etes déja inscrit dans la formation</p>
+    </div>
+    <div *ngIf="f.nombredeplace==0">
+      le nombre de place est insuffisant
+  </div>
+    <button (click)="sinscrire(f)" *ngIf="dejasinscrir(f)||f.nombredeplace==0">S'inscrire</button><br>
     <a routerLink="/public/lesformation">Retour</a>
   </div>
 </body>

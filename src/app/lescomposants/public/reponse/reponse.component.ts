@@ -17,8 +17,8 @@ export class ReponseComponent implements OnInit{
   
   ngOnInit(): void {
     this.user=this.condidatService.getuser()
-    this.messageService.getmessages('?reponse!=').subscribe(data=>{this.lesmessages=data;
-    this.lesmessages.filter(e=>e.id==this.user.id)})
+    this.messageService.getmessages('').subscribe(data=>{this.lesmessages=data;
+    this.lesmessages=this.lesmessages.filter(e=>e.user.id==this.user.id && e.reponse!="")})
     throw new Error('Method not implemented.');
   }
 }

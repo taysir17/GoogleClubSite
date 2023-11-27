@@ -24,9 +24,10 @@ export class ModifierComponent implements OnInit{
       nbheure: [this.f.nbheure],
       certifie:[this.f.certifie],
       datedebut:[this.f.datedebut],
+      lesmodules:[this.f.lesmodules],
+      Payant:[this.f.Payant],
+      prix:[this.f.prix],
       candidat:[this.f.candidat]
-    
-      
     });
   }
   onSubmitForm() {

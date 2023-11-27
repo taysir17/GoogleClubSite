@@ -11,7 +11,7 @@ export class Formation {
        public datedebut:Date,
        public lesmodules:string,
        public domaine:string,
-       public payant:boolean,
+       public Payant:boolean,
        public nombredeplace:number,
        public candidat:Form[]
     ){}

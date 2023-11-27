@@ -1,10 +1,14 @@
-.text-primary {
-    color: #007bff;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
-h1,
-h5 {
-    margin: 0;
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .contact-form {
@@ -12,11 +16,9 @@ h5 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-top: 70px;
-
-    border-radius: 10px;
-    box-shadow: 0 0 5px #3F51B5;
-    background-color: #607D8B;
+    background-color: #607d8b;
     color: #333;
+    width: 500px;
 }
 
 label {
@@ -34,10 +36,6 @@ input {
     border-radius: 5px;
     outline: none;
     box-shadow: inset 0 0 5px #007bff;
-}
-
-input[type="radio"] {
-    margin-right: 5px;
 }
 
 button {

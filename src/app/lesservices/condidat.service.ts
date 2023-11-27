@@ -56,5 +56,8 @@ export class CondidatService {
 
     return this.http.get<Form[]>(URL+"?email="+email+"&password="+pwd);
   }
+  resetauthentificated(){
+    this.authentificated=0;
+  }
 
 }

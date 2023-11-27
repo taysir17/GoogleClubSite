@@ -31,7 +31,7 @@ export class DetailformationComponent implements OnInit{
     this.x = f.candidat;
     console.log('condidat',this.x);
     this.x.push(this.condidatService.getuser());
-    this.formationService.patchformation(f.id, { candidat: this.x }).subscribe();
+    this.formationService.patchformation(f.id, { candidat: this.x,nombredeplace:f.nombredeplace-1}).subscribe();
   }
   
 }

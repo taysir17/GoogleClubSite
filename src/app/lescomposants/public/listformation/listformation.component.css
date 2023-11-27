@@ -58,10 +58,9 @@ input[type="text"] {
 .wow {
     visibility: hidden;
 }
-/* Ajoutez ces styles pour améliorer l'aperçu des checkbox et espacer de manière élégante */
 .col-md-4 {
     margin-bottom: 20px;
-    background-color: #f8f9fa; /* Couleur de fond pour la partie des checkbox */
+    background-color: #f8f9fa; 
     padding: 15px;
     border-radius: 8px;
 }
@@ -70,28 +69,22 @@ input[type="text"] {
     margin-bottom: 10px;
 }
 
-/* Style pour rendre les checkbox plus jolis */
 .form-check-input {
-    margin-right: 8px; /* Espace à droite des checkbox */
+    margin-right: 8px; 
 }
 
-/* Style pour les labels des checkbox */
 .form-check-label {
     display: flex;
     align-items: center;
 }
 
-/* Ajoutez une légère ombre à la partie des checkbox pour la démarquer du reste de la page */
 .col-md-4 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles pour les espacements dans la partie du contenu central */
 .col-md-8 {
     margin-bottom: 20px;
 }
-
-/* Ajoutez une légère ombre pour démarquer la partie du contenu central */
 .col-md-8 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

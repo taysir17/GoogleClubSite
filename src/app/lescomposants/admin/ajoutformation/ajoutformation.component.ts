@@ -17,7 +17,7 @@ export class AjoutformationComponent  implements OnInit{
 
   ngOnInit(): void {
     this.formation = this.formBuilder.group({
-      titre: ['', Validators.required],
+      titre: ['', [Validators.required, Validators.pattern('[A-Z][a-z]+')]],
       image: ['', Validators.required],
       nbheure: ['', [Validators.required, Validators.min(1)]],
       certifie: [false],

@@ -46,12 +46,21 @@ export class ProjectsComponent implements OnInit{
     this.formationService.setf(f)
     this.router.navigate(['/admin/modifier']);
   }
-  effacer(id:string,i:number){
-    this.formationService.deleteformation(id).subscribe();
-    this.lesformation.splice(i,1)
+  effacer(id: string, i: number) {
+    if (confirm("Es-tu sûr(e) de vouloir supprimer cette formation ?")) {
+      this.formationService.deleteformation(id).subscribe(() => {
+        this.lesformation.splice(i, 1);
+      });
+    } else {
+      console.log("Suppression annulée");
+    }
   }
+  
   chercher(){
-    this.lesformation=this.lesformation.filter(e=>e.titre.startsWith(this.formationName))
+    this.formationService.getformation("").subscribe (data=>{this.lesformation=data;
+      this.lesformation=this.lesformation.filter(e=>e.titre.startsWith(this.formationName))})
+
   }
+  
     
 }

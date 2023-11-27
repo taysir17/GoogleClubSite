@@ -41,9 +41,11 @@
     <div class="table-container">
       <div>
         <h1>liste des formations</h1>
+        <div id="title">
         <input type="text" placeholder="name" [(ngModel)]="formationName"  class="form-control" (input)="chercher()" #nom>
         <button class="btn btn-light" (click)="ajouter()">Ajouter</button>
       </div>
+    </div>
 
       <table>
         <tr>
@@ -66,9 +68,11 @@
           <td>{{f.datedebut | date:'dd MMMM yyyy' | uppercase}}</td>
           <td>{{f.nombredeplace}}</td>
           <td>{{f.nbheure}}</td>
-          <td>{{f.certifie}}</td>
-          <td [ngClass]="{'payant-oui': f.payant, 'payant-non': f.payant}">
-            <span></span> {{ f.payant ? f.prix : 'gratuit' }}
+          <td [ngClass]="{'certifie-oui': f.certifie, 'certifie-non': !f.certifie}">
+             {{ f.certifie ? 'Oui' : 'Non' }}
+          </td>
+          <td [ngClass]="{'payant-oui': f.Payant, 'payant-non': !f.Payant}">
+            {{f.prix|prix}} 
           </td>
           <td>
             <div id="button">
