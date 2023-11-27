@@ -4,26 +4,23 @@
     </div>
 
     <div class="input-group mb-3">
-        <input type="text" placeholder="name" [(ngModel)]="formationName"  class="form-control">
-        <button class="btn btn-outline-secondary" type="button" (click)="cherchername()">
-            <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
+        <input type="text" placeholder="name" [(ngModel)]="formationName"  class="form-control" (input)="chercher(domaine.value,free.checked)" >
+        
     </div>
 
     <div class="row">
         <div class="col-md-4">
             <h3>Price</h3>
-            <input class="form-check-input" type="checkbox" id="free" #free>
+            <input class="form-check-input" type="checkbox" id="free" #free (change)="chercher(domaine.value,free.checked)">
             <label class="form-check-label" for="free">Free</label>
-            <input class="form-check-input" type="checkbox"  #free id="minMax" [(ngModel)]="minMaxChecked">
-            <label class="form-check-label" for="free">Min 100 - Max 200</label>
+         
             <h3>Domains</h3>
-            <input class="form-check-input" type="checkbox" id="TI" #TI>
-            <label class="form-check-label" for="free">TI</label><br>
-
-            <input class="form-check-input" type="checkbox" id="mgt" #mgt>
-            <label class="form-check-label" for="free">MGT</label>
-
+            <select (change)="chercher(domaine.value,free.checked)" #domaine>
+                <option value="tous" selected>Tous</option>
+                <option value="TI">TI</option>
+                <option value="MGT">MGT</option>
+            </select>
+          
         </div>
 
         <div class="col-md-8">

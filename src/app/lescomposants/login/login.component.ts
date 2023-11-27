@@ -37,12 +37,14 @@ export class LoginComponent implements OnInit {
       if(this.condidatService.login(data)==1){
           this.condidatService.setuser(data[0])
           this.router.navigate(["/public"])
-          this.condidatService.patchcondidat(data[0].id,{nbvesite:data[0].nbvisite+1})
+          this.condidatService.patchcondidat(data[0].id,{nbvisite:data[0].nbvisite+1}).subscribe()
 
       }
       else if(this.condidatService.login(data)==2){
         this.condidatService.setuser(data[0])
         this.router.navigate(["/admin"])
+        this.condidatService.patchcondidat(data[0].id,{nbvisite:data[0].nbvisite+1}).subscribe()
+
       }
       else{
         this.visible=true;

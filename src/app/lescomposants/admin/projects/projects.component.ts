@@ -26,14 +26,14 @@ export class ProjectsComponent implements OnInit{
   nbformation!:number;
   nbadmin!:number;
   user!:Form;
-  
+  formationName:string="";
   
   getFormation(){
     this.formationService.getformation("").subscribe (data=>this.lesformation=data) }
   
   ngOnInit(): void {
     this.user=this.condidatService.getuser();
-  
+    this.condidatService.getpublic().subscribe(data=>this.lespublic=data)
     this.getFormation()
     this.formationService.getformation("").subscribe(data=>this.nbformation=data.length)
     this.condidatService.getadmin().subscribe(data=>this.nbadmin=data.length)
@@ -50,13 +50,8 @@ export class ProjectsComponent implements OnInit{
     this.formationService.deleteformation(id).subscribe();
     this.lesformation.splice(i,1)
   }
-  chercher(titre:string){
-    this.c="?"
-    if(titre!="")
-      this.c+="&titre="+titre;
+  chercher(){
+    this.lesformation=this.lesformation.filter(e=>e.titre.startsWith(this.formationName))
+  }
     
-
-    this.formationService.getformation(this.c).subscribe (data=>this.lesformation=data)
-  
-    }
 }
