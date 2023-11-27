@@ -13,10 +13,14 @@ import { FormationService } from 'src/app/lesservices/formation.service';
 export class ListformationComponent implements OnInit {
   x: Form[] = [];
   c!: string;
-  formationName!: string ;
+  formationName!: string;
   minMaxChecked: boolean = false;
-  constructor(private router: Router, private formationService: FormationService, private condidatService: CondidatService) { }
+  selectedDomains: { [key: string]: boolean } = {};
+
   lesformation: Formation[] = [];
+
+  constructor(private router: Router, private formationService: FormationService, private condidatService: CondidatService) { }
+
   getFormation() {
     this.formationService.getformation("").subscribe(data => this.lesformation = data);
   }
@@ -34,7 +38,7 @@ export class ListformationComponent implements OnInit {
       this.c += "&prix=0";
     }
 
-    this.filterByMinMax(); 
+   
 
     this.formationService.getformation(this.c).subscribe(data => this.lesformation = data);
   }
@@ -45,9 +49,4 @@ export class ListformationComponent implements OnInit {
     }
   }
 
-  filterByMinMax() {
-    if (this.minMaxChecked) {
-      this.c += "&minPrice=100&maxPrice=200";
-    }
-  }
 }

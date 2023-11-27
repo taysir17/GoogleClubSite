@@ -1,46 +1,57 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modifier</title>
-    
+    <title>Contact Form</title>
 </head>
 <body>
 
 <div class="container-fluid">
     <div class="contact-detail position-relative">
-        <h1>Modifier formation</h1>
-        <div class="contact-form">
-            <form action="" [formGroup]="formation" (ngSubmit)="onSubmitForm() ">
-            <div>
-                <label for="titre">Titre</label>
-                <input type="text" id="titre"  formControlName="titre">
-            </div>
-            <div>
-                <label for="image">Image</label>
-                <input type="text" id="image"  formControlName="image">
-            </div>
-            <div>
-                <label for="nbheure">nembre heure </label>
-                <input type="number" id="nbheure" formControlName="nbheure" >
-            </div>
-            <div>
-                <label for="certifie">certifie</label>
-                <input type="checkbox" id="certifie" formControlName="certifie" >
-            </div>
-            <div>
-                <label for="">date debut</label>
-                <input type="date" id="dtadebut"  formControlName="datedebut">
-            </div>
-            <div>
-                <button >modifier</button>
-            </div>
-        </form>
-        </div>
         
+        <div class="contact-form">
+            <form [formGroup]="formation" (ngSubmit)="onSubmitForm()">
+                <h1>Ajouter formation</h1>
+                <div>
+                    <label for="titre">Titre</label>
+                    <input type="text" id="titre" formControlName="titre">
+                </div>
+                <div>
+                    <label for="image">Lien d' Image</label>
+                    <input type="text" id="image" formControlName="image">
+                </div>
+                <div>
+                    <label for="nbheure">nombre heure</label>
+                    <input type="number" id="nbheure" formControlName="nbheure">
+                </div>
+                <div>
+                    <label for="certifie">certifie</label>
+                    <input type="checkbox" id="certifie" formControlName="certifie">
+                </div>
+                <div>
+                    <label for="datedebut">Date début</label>
+                    <input type="date" id="datedebut" formControlName="datedebut">
+                </div>
+                <div>
+                    <label >lesmodules</label>
+                    <input type="text" id="Payant" formControlName="lesmodules">
+                </div>
+                <div>
+                    <label for="Payant">Payant</label>
+                    <input type="checkbox" id="Payant" formControlName="Payant">
+                    </div>
+                
+                
+                <div *ngIf="formation.get('Payant')?.value">
+                    <label for="prix">Prix</label>
+                    <input type="number" id="prix" formControlName="prix">
+                </div>
+                <div>
+                    <button type="submit">Ajouter</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 

@@ -9,9 +9,10 @@
 
 <div class="container-fluid">
     <div class="contact-detail position-relative">
-        <h1>Ajouter formation</h1>
+        
         <div class="contact-form">
             <form [formGroup]="formation" (ngSubmit)="onSubmitForm()">
+                <h1>Ajouter formation</h1>
                 <div>
                     <label for="titre">Titre</label>
                     <input type="text" id="titre" formControlName="titre">
@@ -33,10 +34,16 @@
                     <input type="date" id="datedebut" formControlName="datedebut">
                 </div>
                 <div>
-                    <label for="Payant">Payant</label>
-                    <input type="checkbox" id="Payant" formControlName="Payant">
+                    <label >lesmodules</label>
+                    <input type="text" id="Payant" formControlName="lesmodules">
                 </div>
                 <div>
+                    <label for="Payant">Payant</label>
+                    <input type="checkbox" id="Payant" formControlName="Payant">
+                    </div>
+                
+                
+                <div *ngIf="formation.get('Payant')?.value">
                     <label for="prix">Prix</label>
                     <input type="number" id="prix" formControlName="prix">
                 </div>

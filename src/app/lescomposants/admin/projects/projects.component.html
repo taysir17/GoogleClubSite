@@ -63,6 +63,10 @@
           <td>{{f.titre}}</td>
           <td>{{f.datedebut|date:'dd MMMM yyyy' | uppercase}}</td>
           <td>{{f.nombredeplace}}</td>
+          <td>{{f.nbheure}}</td>
+          <td>{{f.image}}</td>
+          <td>{{f.certifie}}</td>
+          <td>{{f.payant}}</td>
           <td>
             <button class="btn btn-light" (click)=" effacer(f.id,i)">Supprimer</button>
             <button class="btn btn-light" (click)="modifier(f)">Modifier</button>
