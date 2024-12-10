@@ -11,8 +11,8 @@ Follow these steps to run the project on your local machine.
 ### 1. **Clone the Repository**  
 
 ```bash  
-git clone [<repository_link> ](https://github.com/taysir17/mini-projet.git) 
-cd <GoogleClubSite>
+git clone https://github.com/taysir17/mini-projet.git
+cd GoogleClubSite
 ```  
 
 ### 2. **Install Dependencies**  
