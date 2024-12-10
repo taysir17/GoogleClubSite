@@ -1,6 +1,6 @@
 # Google Club Project - Angular Application  
 
-A collaborative project created in **November 2023** as part of the **Google Club activities** at our university. The project demonstrates the use of various Angular concepts and practices learned during our sessions, such as **Two-way Data Binding**, **Event Binding**, **Routing**, **Guards**, **Pipes**, and more.
+A collaborative project created in **November 2023** about the **Google Club activities** at our university. The project demonstrates the use of various Angular concepts and practices learned during our sessions, such as **Two-way Data Binding**, **Event Binding**, **Routing**, **Guards**, **Pipes**, and more.
 
 ---
 
