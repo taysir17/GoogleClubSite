@@ -19,7 +19,7 @@ import { adminGuard } from './admin.guard';
 import { AjoutformationComponent } from './lescomposants/admin/ajoutformation/ajoutformation.component';
 import { ModifierComponent } from './lescomposants/admin/modifier/modifier.component';
 import { ModifiermdpComponent } from './lescomposants/modifiermdp/modifiermdp.component';
-import { interfaceGuard } from './interface.guard';
+// import { interfaceGuard } from './interface.guard';
 
 import { DetailformationComponent } from './lescomposants/public/detailformation/detailformation.component';
 import { FormationComponent } from './lescomposants/public/formation/formation.component';
