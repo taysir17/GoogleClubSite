@@ -1,27 +1,106 @@
-# Miniprojet
+# Google Club Project - Angular Application  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+A collaborative project created in **November 2023** as part of the **Google Club activities** at our university. The project demonstrates the use of various Angular concepts and practices learned during our sessions, such as **Two-way Data Binding**, **Event Binding**, **Routing**, **Guards**, **Pipes**, and more.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 **Getting Started**  
 
-## Code scaffolding
+Follow these steps to run the project on your local machine.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 1. **Clone the Repository**  
 
-## Build
+```bash  
+git clone [<repository_link> ](https://github.com/taysir17/mini-projet.git) 
+cd <GoogleClubSite>
+```  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 2. **Install Dependencies**  
 
-## Running unit tests
+Run the following command to install the necessary dependencies:  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash  
+npm install  
+```  
 
-## Running end-to-end tests
+### 3. **Set up the JSON Server**  
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+The project uses a JSON file to simulate a backend. To start the JSON server:  
 
-## Further help
+```bash  
+cd json  
+json-server --watch bdform.json  
+```  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This will start the server at [http://localhost:3000](http://localhost:3000).  
+
+### 4. **Start the Angular Application**  
+
+In the main project directory, start the Angular development server:  
+
+```bash  
+ng serve  
+```  
+
+The application will run at [http://localhost:4200](http://localhost:4200).  
+
+---
+
+## ⚙️ **Features**  
+
+This project incorporates various Angular features, including:  
+
+- **Two-way Data Binding**  
+- **Event Binding**  
+- **Property Binding**  
+- **String Interpolation**  
+- **Routing**  
+- **Guards** for route protection  
+- **Pipes** for transforming data  
+- **Reactive Forms** with validators  
+- **Server HTTP** communication  
+
+---
+
+## 📸 **Screenshots**  
+
+Here are some screenshots of the project:  
+
+### Homepage  
+![Homepage](screenshots/HomePage.png)  
+
+### AboutUs  
+![Homepage](screenshots/AboutUs.png)  
+
+### Login Form  
+![Form Example](screenshots/LoginForm.png)  
+
+### Admin Dashboard  
+![List of Members](screenshots/AdminDashboard.png)  
+
+---
+
+## 🛠 **Technologies Used**  
+
+- **Angular**: Framework for building dynamic, single-page web applications.  
+- **JSON Server**: Mock server to simulate backend API.  
+
+---
+
+## 📜 **License**  
+
+This project is licensed under the MIT License. Check the [LICENSE.md](LICENSE.md) file for details.  
+
+---
+
+## 💬 **Contributing**  
+
+Contributions are welcome! Fork the repository, make your changes, and submit a pull request.  
+
+---
+
+## 🧑‍💻 **Contact**  
+
+For any questions, feel free to reach out!  
+
+- Email: [taysirbouzidi123@gmail.com](mailto:taysirbouzidi123@gmail.com)  
