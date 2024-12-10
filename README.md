@@ -11,7 +11,7 @@ Follow these steps to run the project on your local machine.
 ### 1. **Clone the Repository**  
 
 ```bash  
-git clone https://github.com/taysir17/mini-projet.git
+git clone https://github.com/taysir17/GoogleClubSite.git
 cd GoogleClubSite
 ```  
 
